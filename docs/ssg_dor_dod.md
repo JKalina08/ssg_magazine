@@ -1,7 +1,7 @@
 Příprava projektu SSG - Definition of Ready
 -------------------
 
- \*/ DoR: co je třeba splnit, před zahájením projektu
+ _\*/ DoR: co je třeba splnit, před zahájením projektu_
 
  - průzkum trhu, analýza již existujícícíh řešení, které řeší stejný nebo podobný problém (pokud existují) OK 
  - realističnost - vyhodnocení, zda a za jakých podmínek má smysl se do projektu pouštět (nerealizovatelnost, nerealistické představy zadavatele, …) OK
@@ -13,7 +13,7 @@ Příprava projektu SSG - Definition of Ready
 Příprava projektu SSG - Definition of Done
 -------------------
 
- \*/ DoD: za jakých podmínek lze úkol označit jako dokončený
+ _\*/ DoD: za jakých podmínek lze úkol označit jako dokončený_
 
  - náklady OK
  - sestavení týmu OK
