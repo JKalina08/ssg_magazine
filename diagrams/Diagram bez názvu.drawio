@@ -1,1 +1,46 @@
-<mxfile host="app.diagrams.net" modified="2022-10-17T10:40:27.422Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" version="20.4.1" etag="6Ed3GS4IUdK5pE_FG2Ww" type="github"><diagram id="nS3ju-KCV-cAikzgCahs">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-17T11:25:39.931Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="24YXkIEY4a6PaxySd7oX" version="20.4.1" type="github">
+  <diagram id="nS3ju-KCV-cAikzgCahs" name="Stránka-1">
+    <mxGraphModel dx="2249" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;System&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ prihlasenyUser: User&lt;br&gt;+ otevrenyClanek: Clanek&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nacti(urlAdresa: string) : void&lt;br&gt;+ vypisStranku() : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ prihlasUser(user: User) : void&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ registrujUser(user: User) : void&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;. . .&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;TODO&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="319" y="330" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-3" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="580" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-4" value="+ usrJmeno: string&#xa;+ email: string&#xa;+ otiskHesla: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2_A6GxJtUWTnteKH_YJZ-3">
+          <mxGeometry y="26" width="340" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2_A6GxJtUWTnteKH_YJZ-3">
+          <mxGeometry y="90" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-6" value="+ vypis(): void&#xa;+ zmenUdaje(usrJmeno: string, email: string) : void&#xa;+ zmenHeslo(star: string, nove: string) : void&#xa;+ overHeslo(heslo: string) : bool&#xa;. . .&#xa;TODO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2_A6GxJtUWTnteKH_YJZ-3">
+          <mxGeometry y="98" width="340" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-11" value="Clanek" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="580" width="340" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-12" value="+ titulek : string&#xa;+ popisek : string&#xa;+ obsah : string&#xa;+ stav : StavClanku&#xa;. . . &#xa;TODO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2_A6GxJtUWTnteKH_YJZ-11">
+          <mxGeometry y="26" width="340" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2_A6GxJtUWTnteKH_YJZ-11">
+          <mxGeometry y="130" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-14" value="+ vypis(): void&#xa;. . .&#xa;TODO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2_A6GxJtUWTnteKH_YJZ-11">
+          <mxGeometry y="138" width="340" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-15" value="StavClanku" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="360" width="210" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-16" value="+ publikovany : int&#xa;+ zamitnuty : int&#xa;+ cekajici : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2_A6GxJtUWTnteKH_YJZ-15">
+          <mxGeometry y="26" width="210" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="2_A6GxJtUWTnteKH_YJZ-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2_A6GxJtUWTnteKH_YJZ-15">
+          <mxGeometry y="80" width="210" height="8" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
