@@ -4,14 +4,16 @@
 Aplikace pro prohlížení, sběr příspěvků a administraci recenzního řízení
 odborného a vědeckého časopisu
 
-__Požadované řešení:__
+__Požadované řešení:__  
 Výše popsané procesy by měly být implementovány tak, aby odpadla stávající e-mailová komunikace
 a všechny dokumenty, termíny, úkoly, komunikace i poznámky by byly bezpečně archivovány
-v centrální databázi. Kromě toho jsou požadovány následující funkčnosti:
-• Každý autor, recenzent, redaktor i člen redakční rady musí mít vlastní bezpečný přihlašovací
-profil, který může editovat.
-• Autor po přihlášení:
-o Zadá název příspěvku, kontaktní údaje kompletního autorského týmu a plný text
+v centrální databázi. Kromě toho jsou požadovány následující funkčnosti:  
+
+* Každý autor, recenzent, redaktor i člen redakční rady musí mít vlastní bezpečný přihlašovací
+profil, který může editovat.  
+
+* Autor po přihlášení:
+  * Zadá název příspěvku, kontaktní údaje kompletního autorského týmu a plný text
 příspěvku ve formátu pdf nebo doc(x). Všechny verze textů, které autor redakci zaslal,
 zůstávají zachovány v systému včetně souvisejících doplňujících informací. Příjemná by
 byla možnost doslovného textového srovnání jednotlivých verzí příspěvku (původní, po
@@ -20,12 +22,13 @@ o Bude průběžně informován o aktuální fázi recenzního řízení (podán
 tematické nevhodnosti, předáno recenzentům, zamítnuto, přijato s výhradami, čeká na
 dodatečné opravy ze strany autora, čeká na dodatečné vyjádření ze strany recenzenta,
 čeká na vyjádření šéfredaktora, přijato).
-o Má možnost výběru tematického čísla časopisu. Přitom se zároveň dozví, jaký je o něj
+  * Má možnost výběru tematického čísla časopisu. Přitom se zároveň dozví, jaký je o něj
 aktuální zájem, tj. zná celkový počet příspěvků v recenzním řízení a kapacitu výtisku.
-o V případě nesouhlasu se závěry oponenta může redaktorovi poslat své námitky, vepsané
-do oponentního formuláře.
-• Redaktor po přihlášení:
-o Je informován o stavu každého příspěvku - např. nově podaný, čeká na stanovení
+  * V případě nesouhlasu se závěry oponenta může redaktorovi poslat své námitky, vepsané
+do oponentního formuláře.  
+
+* Redaktor po přihlášení:
+  * Je informován o stavu každého příspěvku - např. nově podaný, čeká na stanovení
 recenzentů, recenzní řízení probíhá a bude ukončeno 31. 10. 2020, posudek 1 doručen
 redakci, posudek 2 doručen redakci, posudky odeslány autorovi, probíhá úprava textu
 autorem, příspěvek je přijat k vydání nebo příspěvek zamítnut.
