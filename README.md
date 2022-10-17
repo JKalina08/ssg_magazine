@@ -62,7 +62,7 @@ samostatně provádět nesmí. Má ale možnost je písemně formulovat, napří
 * Administrátor po přihlášení může kompletně spravovat celou aplikaci. Bylo by vhodné, aby měl
 za tím účelem vlastní rozhraní.  
 
-__Další požadavky__
+__Další požadavky__  
 a) Kromě popsaných funkčností by bylo vhodné, aby kromě přidávání, mazání a prohlížení bylo
 možné jednotlivé záznamy také řadit, filtrovat, vyhledávat a počítat jejich souhrny.  
 b) Aplikace by dále měla obsahovat HelpDesk, na který bude možné zasílat související dotazy. Dále
