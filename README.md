@@ -53,12 +53,13 @@ formulář, obsahující kromě identifikátorů autora a článku následujíc�
 ve stupnici 1 (nejlepší) až 5 (nejhorší). Kromě toho musí recenzní formulář obsahovat textové
 pole na otevřenou odpověď a datum recenze.  
 
-• Šéfredaktor po přihlášení vidí veškerou agendu autora, redaktora i recenzentů. Změny v ní ale
+* Šéfredaktor po přihlášení vidí veškerou agendu autora, redaktora i recenzentů. Změny v ní ale
 samostatně provádět nesmí. Má ale možnost je písemně formulovat, například formou jmenných
 úkolů a vyžadovat jejich plnění k danému termínu.   
 
-• Čtenář se nemusí přihlašovat a vidí pouze veřejně dostupné informace.
-• Administrátor po přihlášení může kompletně spravovat celou aplikaci. Bylo by vhodné, aby měl
+* Čtenář se nemusí přihlašovat a vidí pouze veřejně dostupné informace.  
+
+* Administrátor po přihlášení může kompletně spravovat celou aplikaci. Bylo by vhodné, aby měl
 za tím účelem vlastní rozhraní.  
 
 __Další požadavky__
