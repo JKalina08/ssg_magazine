@@ -1,0 +1,177 @@
+body {
+  //color: #fff;
+  font: 'Open Sans', sans-serif;
+  background:url(img/bg1.jpg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+.logo{
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 40px;
+    font-weight: 640;
+    color: #c9c9c9;
+    font-family:'sans-serif','helvetica';
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background: rgba(0,0,0,0.27);
+    border-radius: 5px;
+    margin-bottom:5px;
+}
+
+.andeltop{
+    float: right;
+    position: absolute;
+    border: none;
+    width: 45px;
+    height: auto;
+    margin: 8px 0px 0px 20px;
+}
+
+
+
+.grave{
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    background:url("img/grave1.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: auto 100%;
+    margin: 15px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
+}
+
+.grave .name{
+    font-family:'sans-serif','helvetica';
+    font-size: 25px;
+    font: bold;
+    font-weight: 900;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.grave img{
+    height: 165px;
+    width: auto;
+    border: solid black 2px;
+}
+
+.grave .andel{
+    float: left;
+    position: absolute;
+    border: none;
+    width: 70px;
+    height: auto;
+    margin: -25px 0px 0px -130px;
+}
+
+.grave p{
+    font-style: italic;
+    width: 60%;
+    margin-left: 20%;
+}
+
+
+.egrave {
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    background:url("img/emptyGrave1.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 350px 500px;
+    margin: 15px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
+
+}
+.egrave .name{
+    font-family:'sans-serif','helvetica';
+    font-size: 25px;
+    color: #c9c9c9;
+    font-weight: 900;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.egrave .button{
+    margin-left: 25px;
+}
+
+.grass {
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    background:url("img/grass1.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 350px 500px;
+    margin: 15px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
+
+}
+.grass .name{
+    font-family:'sans-serif','helvetica';
+    font-size: 25px;
+    color: #c9c9c9;
+    font-weight: 900;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.grass .button{
+    margin-left: 25px;
+}
+
+
+
+.button-panel {
+  border: 1px solid black;
+  overflow: hidden;  
+}
+
+.button {
+  background: #00b6df;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  font-family: 'helvetica','Open Sans', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.6s linear;
+  margin:5px;
+  width: 300px;
+  float:left;
+}
+
+.grave .button{
+    width: 80%;
+    margin-left:10%;
+}
+
+.button img{
+    position: absolute;
+    height: 25px;
+    border: none;
+    width: auto;
+    margin: -5px 0px 0px -25px;
+}
+
+.button:hover {
+  background: #6eb7cb;
+}
+
+.form-item input, .button-panel .button {
+  border-radius: 2px
+}
+
