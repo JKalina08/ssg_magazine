@@ -1,10 +1,30 @@
-# ssg_magazine
-VŠPJ předmět RSP
+![](imgs/vspjLogo.png "VSPJ")
+# Řízení Sowtwarových Projektů - RSP
 
 **Team SSG**
 
 Aplikace pro prohlížení, sběr příspěvků a administraci recenzního řízení
 odborného a vědeckého časopisu
+
+## Struktura projektu: 
+```bash 
+.
+├── .db/                  # Zde si MySQL kontajner uklada data
+├── .git/                 # Slozka pro GIT - zaznamy o verzovani
+├── diagrams/             # ER modely "draw.io"
+├── docs/                 # Dokumenty 
+├── imgs/                 # Obrazky pro dokumenty
+├── sqldb/                # Zakladaci skripty databaze            
+├── www/                  # !! Slozka s projektem, odtud Apache nacita WWW !!
+├── .gitignore            # Soubor s vyctem polozek ktere ma GIT ignorovat
+├── Dockerfile            # Instrukce pro sestaveni Apache s PHP image
+├── README.md             # Informace o projektu
+├── clean.sh              # Vyzaduje Docker     
+├── docker-compose.yml    # Instrukce k sestaveni kont. stacku Apache-Db-Admin
+├── entrypoint.sh         # Instrukce Docker postinstalace DB
+└── vhost.conf            # Konfigurace Apache serveru
+```
+
 
 ## Požadované řešení:  
 
