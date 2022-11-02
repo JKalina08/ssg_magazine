@@ -1,5 +1,5 @@
 <?php
-$sname= "localhost:3306";
+$sname= "rsp-db:3306";
 $uname= "root";
 $password = "secret";
 $db_name = "ssg";

@@ -55,6 +55,8 @@ odborného a vědeckého časopisu
   - Zadejte příkaz `docker-compose up -d`.
   - Ve webovém prohlížeči zadejte `localhost:80` a zobrazí se vám hlavní stránka aplikace.
   - Taktéž v prohlížeči je php adminer na adrese `localhost:8888` pro správu databáze.
+    - Login info (Heslo = secret)  
+    ![adminer](imgs/adminer.png)
 - Databázi je potřeba naplnit daty naší aplikace.
   - TODO: návod na manuální vytvoření DB nebo bude automatizováno
 
