@@ -25,6 +25,12 @@ odborného a vědeckého časopisu
 └── vhost.conf            # Konfigurace Apache serveru
 ```
 
+## Instalace a zprovoznění
+Předpokladem je OS Windows 10 nebo 11.  
+Nainstalovat aplikaci  [Docker](https://docs.docker.com/desktop/install/windows-install/).  
+Nainstalovat IDE [VS Code](https://code.visualstudio.com/download) pro Windows.  
+.. TODO
+
 
 ## Požadované řešení:  
 
