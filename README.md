@@ -45,7 +45,7 @@ odborného a vědeckého časopisu
     ![GhbMd](imgs/exghbmd.png)
     * Live Share  
     ![LiveShare](imgs/exlivesh.png)  
-    
+
 * V terminálu navigujte do složky kam chcete stáhnou repozitář. 
   * `git clone https://github.com/JKalina08/ssg_magazine.git` vytvoří se vám složka "ssg_magazine".
   * Přepněte se do složky `cd ssg_magazine`.
@@ -55,6 +55,9 @@ odborného a vědeckého časopisu
   - Zadejte příkaz `docker-compose up -d`.
   - Ve webovém prohlížeči zadejte `localhost:80` a zobrazí se vám hlavní stránka aplikace.
   - Taktéž v prohlížeči je php adminer na adrese `localhost:8888` pro správu databáze.
+- Databázi je potřeba naplnit daty naší aplikace.
+  - TODO: návod na manuální vytvoření DB nebo bude automatizováno
+
 
 
 ## Požadované řešení:  
