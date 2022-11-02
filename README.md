@@ -10,7 +10,7 @@ odborného a vědeckého časopisu
 ```bash 
 .
 ├── .db/                  # Zde si MySQL kontajner uklada data
-├── .git/                 # Slozka pro GIT - zaznamy o verzovani
+├── .git/                 # Slozka verz. systemu GIT - zaznamy o verzovani
 ├── diagrams/             # ER modely "draw.io"
 ├── docs/                 # Dokumenty 
 ├── imgs/                 # Obrazky pro dokumenty
