@@ -9,7 +9,7 @@ odborného a vědeckého časopisu
 ## Struktura projektu: 
 ```bash 
 .
-├── .db/                  # Zde si MySQL kontajner uklada data
+├── .db/                  # !! Data pro MySQL db -> musite rucne vytvorit !!
 ├── .git/                 # Slozka verz. systemu GIT - zaznamy o verzovani
 ├── diagrams/             # ER modely "draw.io"
 ├── docs/                 # Dokumenty 
@@ -44,10 +44,17 @@ odborného a vědeckého časopisu
     * GitHub Markdown Preview  
     ![GhbMd](imgs/exghbmd.png)
     * Live Share  
-    ![LiveShare](imgs/exlivesh.png)
-* V terminálu navigujte do složky kam chcete stáhnou repozitář 
+    ![LiveShare](imgs/exlivesh.png)  
+    
+* V terminálu navigujte do složky kam chcete stáhnou repozitář. 
   * `git clone https://github.com/JKalina08/ssg_magazine.git` vytvoří se vám složka "ssg_magazine".
-  * `cd ssg_magazine`
+  * Přepněte se do složky `cd ssg_magazine`.
+  - Založte v "ssg_magazine" novou složku ".db" `mkdir .db`.
+- Spuštění kontajnerového stacku.
+  - Musíte být ve složce ssg_magazine přes terminál.
+  - Zadejte příkaz `docker-compose up -d`.
+  - Ve webovém prohlížeči zadejte `localhost:80` a zobrazí se vám hlavní stránka aplikace.
+  - Taktéž v prohlížeči je php adminer na adrese `localhost:8888` pro správu databáze.
 
 
 ## Požadované řešení:  
