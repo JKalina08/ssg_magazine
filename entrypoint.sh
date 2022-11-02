@@ -33,7 +33,7 @@ setup_database() {
     # import database if exsits
     if [ -f $APP_WEBROOT/.devcontainer/data/database.sql ]; then
             echo >&2 "Entrypoint: [database] - import database file: prod-dump.sql"
-            cat $APP_WEBROOT/.devcontainer/sqldb/database.sql | mysql -h mysql -u"root" -p"$DB_ROOTPASS" $DB_DATABASE
+            cat $APP_WEBROOT/.devcontainer/data/database.sql | mysql -h mysql -u"root" -p"$DB_ROOTPASS" $DB_DATABASE
     fi
 }
 
