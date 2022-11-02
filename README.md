@@ -26,10 +26,28 @@ odborného a vědeckého časopisu
 ```
 
 ## Instalace a zprovoznění
-Předpokladem je OS Windows 10 nebo 11.  
-Nainstalovat aplikaci  [Docker](https://docs.docker.com/desktop/install/windows-install/).  
-Nainstalovat IDE [VS Code](https://code.visualstudio.com/download) pro Windows.  
-.. TODO
+* Předpokladem je OS Windows 10 nebo 11. 
+* Zprovozněný GIT - buď ve WSL2 nebo jako [GitBash](https://git-scm.com/download/win)-> aplikace pro Windows. 
+  * Nastavení gitu (Bu+d ve WSL Bashi nebo Windows aplikace Git Bash)
+    * `git config --global user.name "tvojeGitHubJmeno"`
+    * `git config --global user.email "tvujEmail@domena.cz"`
+    * `git config --global init.defaultBranch main`
+* Nainstalovat aplikaci  [Docker](https://docs.docker.com/desktop/install/windows-install/).  
+* Nainstalovat IDE [VS Code](https://code.visualstudio.com/download) pro Windows.  
+  * Ve VS Code doinstalovat extenze v postraním panelu ![Extensions](imgs/ext.png) 
+    * Docker  
+    ![Docker](imgs/exdkr.png)
+    * Dev Containers  
+    ![DevCont](imgs/exdevcont.png)
+    * WSL  
+    ![Wsl](imgs/exwsl.png)
+    * GitHub Markdown Preview  
+    ![GhbMd](imgs/exghbmd.png)
+    * Live Share  
+    ![LiveShare](imgs/exlivesh.png)
+* V terminálu navigujte do složky kam chcete stáhnou repozitář 
+  * `git clone https://github.com/JKalina08/ssg_magazine.git` vytvoří se vám složka "ssg_magazine".
+  * `cd ssg_magazine`
 
 
 ## Požadované řešení:  
