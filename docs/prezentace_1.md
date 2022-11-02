@@ -1,13 +1,13 @@
 ## Úvodní týmová prezentace
 
-* __Představení týmu a jeho členů__
+* __(1) Představení týmu a jeho členů__
     * Jiří Kalina (PO)
     * Michal Makovec (SM)
     * Jiří Karmasin (TM)
     * Jiří Bukovský (TM)
     * Flowee Pospíšilová (TM)
 
- * __Stručná charakteristika implementační platformy__
+ * __(2) Stručná charakteristika implementační platformy__
    * ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
    ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
    ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)  
@@ -18,15 +18,15 @@
    ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
    ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
    * Nejvíce předmětů a hodin strávených v HTML, CSS, PHP, JavaScript.
-* __Co už je hotovo a na čem právě pracujete__  
+* __(3) Co už je hotovo a na čem právě pracujete__  
     * Sprint 1 - dva dny před koncem sprintu.
     * ![sdSprint1](../imgs/sprint1.png)
     * Storymap
     * ![storymap](../imgs/storymap.png)
-* __Poznatky týkající se:__
+* __(4) Poznatky týkající se:__
     * Práce s týmovými nástroji
     * Týmové spolupráce
-* __Retrospektiva:__
+* __(5) Retrospektiva:__
     * S čím jste spokojeni
     * Co chcete vylepšit
-* __Případné dotazy na kolegy i vyučujícího__
+* __(6) Případné dotazy na kolegy i vyučujícího__
