@@ -24,7 +24,7 @@ odborného a vědeckého časopisu
 └── vhost.conf            # Konfigurace Apache serveru
 ```
 
-## Instalace a zprovoznění
+  ## Instalace a zprovoznění
 * Předpokladem je OS Windows 10 nebo 11. 
 * Zprovozněný GIT - buď ve WSL2 nebo jako [GitBash](https://git-scm.com/download/win)-> aplikace pro Windows. 
   * Nastavení gitu (Bu+d ve WSL Bashi nebo Windows aplikace Git Bash)
@@ -46,9 +46,7 @@ odborného a vědeckého časopisu
     ![LiveShare](imgs/exlivesh.png)  
 
 * V terminálu navigujte do složky kam chcete stáhnou repozitář. 
-  * `git clone https://github.com/JKalina08/ssg_magazine.git` vytvoří se vám složka "ssg_magazine".
-  * Přepněte se do složky `cd ssg_magazine`.
-  - Založte v "ssg_magazine" novou složku ".db" `mkdir .db`.
+  * `git clone https://github.com/JKalina08/ssg_magazine.git` vytvoří se vám složka "ssg_magazine", ve které jsou všechny soubory k projektu.
 
 - Spuštění kontajnerového stacku.
   - Musíte být ve složce ssg_magazine přes terminál.
