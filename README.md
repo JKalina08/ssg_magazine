@@ -9,7 +9,6 @@ odborného a vědeckého časopisu
 ## Struktura projektu: 
 ```bash 
 .
-├── .db/                  # !! Data pro MySQL db -> musite rucne vytvorit !!
 ├── .git/                 # Slozka verz. systemu GIT - zaznamy o verzovani
 ├── diagrams/             # ER modely "draw.io"
 ├── docs/                 # Dokumenty 
@@ -50,15 +49,23 @@ odborného a vědeckého časopisu
   * `git clone https://github.com/JKalina08/ssg_magazine.git` vytvoří se vám složka "ssg_magazine".
   * Přepněte se do složky `cd ssg_magazine`.
   - Založte v "ssg_magazine" novou složku ".db" `mkdir .db`.
+
 - Spuštění kontajnerového stacku.
   - Musíte být ve složce ssg_magazine přes terminál.
-  - Zadejte příkaz `docker-compose up -d`.
-  - Ve webovém prohlížeči zadejte `localhost:80` a zobrazí se vám hlavní stránka aplikace.
+  - Zadejte příkaz `docker-compose up -d`, tím se sestaví kontajnery a jsou k jsou připraveny k použití.
+    - V příštím spuštění pak přes příkaz `docker-compose start` | `docker-compose stop`.
+    - Nebo přes talčítko v desktopové aplikaci "Docker Desktop"  
+    ![adminer](imgs/dkrcom.png)
+    - Nápověda: [docker-compose cheatsheet](https://devhints.io/docker-compose)
   - Taktéž v prohlížeči je php adminer na adrese `localhost:8888` pro správu databáze.
-    - Login info (Heslo = secret)  
+    - Přihlašte se do adminera (Heslo = secret)  
     ![adminer](imgs/adminer.png)
-- Databázi je potřeba naplnit daty naší aplikace.
-  - TODO: návod na manuální vytvoření DB nebo bude automatizováno
+    - Po přihášení vyberte "SQL Příkaz  
+    ![adminer](imgs/sql.png)
+    - Zkopírujte do schránky obdah souboru `sqldb/mydatabase_new.sql` a vložte do dialogového okana a podtvrďte `Provést`
+    ![adminer](imgs/sql2.png)
+    - Tímto je databáze naplněná daty a aplikace může fungovat.
+    - Ve webovém prohlížeči zadejte `localhost:80` a zobrazí se vám hlavní stránka aplikace, která by nyní měla spolupracovat s naplněnou databází.
 
 
 
