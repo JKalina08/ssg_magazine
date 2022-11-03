@@ -52,15 +52,15 @@ odborného a vědeckého časopisu
   - Musíte být ve složce ssg_magazine přes terminál.
   - Zadejte příkaz `docker-compose up -d`, tím se sestaví kontajnery a jsou k jsou připraveny k použití.
     - V příštím spuštění pak přes příkaz `docker-compose start` | `docker-compose stop`.
-    - Nebo přes talčítko v desktopové aplikaci "Docker Desktop"  
+    - Nebo přes talčítko v desktopové aplikaci "Docker Desktop".  
     ![adminer](imgs/dkrcom.png)
     - Nápověda: [docker-compose cheatsheet](https://devhints.io/docker-compose)
-  - Taktéž v prohlížeči je php adminer na adrese `localhost:8888` pro správu databáze.
-    - Přihlašte se do adminera (Heslo = secret)  
+  - V prohlížeči na adrese `localhost:8888` je "adminer" pro správu databáze.
+    - Přihlašte se do adminera (Heslo = secret).  
     ![adminer](imgs/adminer.png)
-    - Po přihášení vyberte "SQL Příkaz  
+    - Po přihášení vyberte "SQL Příkaz".  
     ![adminer](imgs/sql.png)
-    - Zkopírujte do schránky obdah souboru `sqldb/mydatabase_new.sql` a vložte do dialogového okana a podtvrďte `Provést`
+    - Zkopírujte do schránky obsah souboru `sqldb/mydatabase_new.sql` a vložte do dialogového okana a podtvrďte `Provést`.
     ![adminer](imgs/sql2.png)
     - Tímto je databáze naplněná daty a aplikace může fungovat.
     - Ve webovém prohlížeči zadejte `localhost:80` a zobrazí se vám hlavní stránka aplikace, která by nyní měla spolupracovat s naplněnou databází.
