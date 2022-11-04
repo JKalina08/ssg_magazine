@@ -40,22 +40,25 @@ else
   $name = $_FILES["file"]["name"];
   $theme = $_POST["theme"];
   $title = $_POST["title"];
-//  echo $name;
-//  echo "<br>";
-//  echo $theme;
-//  echo "<br>";
-//  echo $title;
+ // echo $name;
+ // echo "<br>";
+ // echo $theme;
+ // echo "<br>";
+ // echo $title;
   
   $sql = "INSERT INTO ssg_article (id_art, title, file, status, theme, autor) 
-            VALUES (NULL, '$_POST[title]', '$name', '1', '$theme', '3')";  
+            VALUES (NULL, '$_POST[title]', '$name', '1', '$theme', '3')";
+            
+//echo $sql;
+
   if (mysqli_query($conn, $sql)) {
 //  echo '<script language="javascript">';
 //  echo 'alert("Success INSERT")';
 //  echo '</script>';
 } else {
-  echo '<script language="javascript">';
-  echo 'alert("Error INSERT")';
-  echo '</script>';
+//  echo '<script language="javascript">';
+//  echo 'alert("Error INSERT")';
+//  echo '</script>';
 }
 mysqli_close($conn);          
 
@@ -71,8 +74,10 @@ else
 {
 echo "Invalid file";
  }
-   
-?>
+ 
+ 
+?>   
+
 
 <HTML>
 <HEAD>
@@ -97,4 +102,4 @@ echo "Invalid file";
   </div>
   </div>
   </div>
-</BODY>      
+</BODY>  

@@ -2,7 +2,7 @@
 //echo $_POST['file'];
 if (isset($_POST['file'])) {
 
-$file = "res\\".$_POST['file'];
+$file = "res/".$_POST['file'];
 //echo $file;
 if (file_exists($file) && is_readable($file) && preg_match('/\.pdf$/',$file)) {
 	header('Content-Type: application/pdf');
@@ -21,9 +21,6 @@ if (file_exists($file) && is_readable($file) && preg_match('/\.doc$/',$file)) {
 	header("Content-Disposition: attachment; filename=\"$file\"");
 	readfile($file);
 	}     
-    
-    
-    
-    
+
 }
 ?>
