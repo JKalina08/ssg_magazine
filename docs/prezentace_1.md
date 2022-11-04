@@ -23,10 +23,25 @@
     * ![sdSprint1](../imgs/sprint1.png)
     * Storymap
     * ![storymap](../imgs/storymap.png)
+    * Sprint 1 - Konec
+    * ![sdSprint1](../imgs/sprint1end.png)
 * __(4) Poznatky týkající se:__
     * Práce s týmovými nástroji
     * Týmové spolupráce
+
 * __(5) Retrospektiva:__
-    * S čím jste spokojeni
-    * Co chcete vylepšit
+
+- Co se nám líbilo a v čem cheme pokračovat
+    - podařilo se nám úspěšně  naplánovat projekt, odstartovat první sprint
+    - nálada v týmu je výborná, věříme že to zvládneme 👍
+    - členové týmu pracují na tascích průběžně, aktivně komunikují, vzniklé problémy a nejasnosti neodkládají, ale aktivně řeší, aby nevznikaly prodlevy.
+
+- Co se nám nelíbilo a chtěli bychom změnit
+    - Přišli jsme o jednoho člena týmu a tím nesplníme první sprint. Nicméně se nejedná o kritické komponenty a tudíž je možné funkční celek předat.
+    - Aktivity na projektu sice běží podle očekávání, ale vykazování práce a odpracovaných hodin ve ScrumDesku se neděje průběžně, což se mimo jiné významně (a nepříznivě) promítlo v našem burndown grafu
+
+- Co chcete vylepšit
+    - Windows vs Linux file system PHP flexible. Docker je Linux, školní server bude mít Windows file systém => forward-slash vs backslash-slash.
+    - Soubory přijímat v (UTF8 vs cp1250) a bez diakritiky. 
+
 * __(6) Případné dotazy na kolegy i vyučujícího__
