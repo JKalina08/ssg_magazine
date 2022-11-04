@@ -1,11 +1,11 @@
-## Úvodní týmová prezentace
+# Úvodní týmová prezentace
 
 * __(1) Představení týmu a jeho členů__
     * Jiří Kalina (PO)
     * Michal Makovec (SM)
     * Jiří Karmasin (TM)
     * Jiří Bukovský (TM)
-    * Flowee Pospíšilová (TM)
+    * ~~Flowee Pospíšilová (TM)~~
 
  * __(2) Stručná charakteristika implementační platformy__
    * ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
@@ -32,9 +32,11 @@
 * __(5) Retrospektiva:__
 
 - Co se nám líbilo a v čem cheme pokračovat
-    - podařilo se nám úspěšně  naplánovat projekt, odstartovat první sprint
-    - nálada v týmu je výborná, věříme že to zvládneme 👍
-    - členové týmu pracují na tascích průběžně, aktivně komunikují, vzniklé problémy a nejasnosti neodkládají, ale aktivně řeší, aby nevznikaly prodlevy.
+    - Podařilo se nám úspěšně  naplánovat projekt, odstartovat první sprint
+    - Nálada v týmu je výborná, věříme že to zvládneme 👍
+    - Členové týmu pracují na tascích průběžně, aktivně komunikují, vzniklé problémy a nejasnosti neodkládají, ale aktivně řeší, aby nevznikaly prodlevy.
+    - Vývoj aplikace v Docker-kontajner-stacku.
+    - Párové programování přes VS Code LiveShare.
 
 - Co se nám nelíbilo a chtěli bychom změnit
     - Přišli jsme o jednoho člena týmu a tím nesplníme první sprint. Nicméně se nejedná o kritické komponenty a tudíž je možné funkční celek předat.
@@ -45,3 +47,4 @@
     - Soubory přijímat v (UTF8 vs cp1250) a bez diakritiky. 
 
 * __(6) Případné dotazy na kolegy i vyučujícího__
+     - Co s tím, když vypadne člen týmu.
