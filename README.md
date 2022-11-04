@@ -9,18 +9,17 @@ odborného a vědeckého časopisu
 ## Struktura projektu: 
 ```bash 
 .
-├── .git/                 # Slozka verz. systemu GIT - zaznamy o verzovani
-├── diagrams/             # ER modely "draw.io"
-├── docs/                 # Dokumenty 
-├── imgs/                 # Obrazky pro dokumenty
-├── sqldb/                # Zakladaci skripty databaze            
-├── www/                  # !! Slozka s projektem, odtud Apache nacita WWW !!
-├── .gitignore            # Soubor s vyctem polozek ktere ma GIT ignorovat
-├── Dockerfile            # Instrukce pro sestaveni Apache s PHP image
-├── README.md             # Informace o projektu
-├── clean.sh              # Vyzaduje Docker     
-├── docker-compose.yml    # Instrukce k sestaveni kont. stacku Apache-Db-Admin
-├── entrypoint.sh         # Instrukce Docker postinstalace DB
+├── diagrams/             # ER modely 
+├── docs/                 # Dokumentace k projektu
+├── imgs/                 # Obrázky pro dokumentaci
+├── sqldb/                # Zakládací skripty databáze            
+├── www/                  # !! Složka s projektem, odtud Apache načítá "index.php" !!
+├── .gitignore            # Soubor s výčtem položek které má GIT ignorovat
+├── Dockerfile            # Instrukce pro sestavení Docker image Apache2 s PHP
+├── README.md             # Informace o projektu a návod na zporovoznění vývoj. protředí
+├── clean.sh              # Soubor pro docker-compose.yml  
+├── docker-compose.yml    # Instrukce k sestavení kont. stacku Apache-Db-Admin
+├── entrypoint.sh         # Soubor pro docker-compose.yml  
 └── vhost.conf            # Konfigurace Apache serveru
 ```
 
