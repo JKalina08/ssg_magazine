@@ -1,13 +1,13 @@
 # Úvodní týmová prezentace
 
-* __(1) Představení týmu a jeho členů__
-    * Jiří Kalina (PO)
-    * Michal Makovec (SM)
-    * Jiří Karmasin (TM)
-    * Jiří Bukovský (TM)
-    * ~~Flowee Pospíšilová (TM)~~
+## __(1) Představení týmu a jeho členů__
+  * Jiří Kalina (PO)
+  * Michal Makovec (SM)
+  * Jiří Karmasin (TM)
+  * Jiří Bukovský (TM)
+  * ~~Flowee Pospíšilová (TM)~~
 
- * __(2) Stručná charakteristika implementační platformy__
+## __(2) Stručná charakteristika implementační platformy__
    * ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
    ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
    ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)  
@@ -18,33 +18,61 @@
    ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
    ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
    * Nejvíce předmětů a hodin strávených v HTML, CSS, PHP, JavaScript.
-* __(3) Co už je hotovo a na čem právě pracujete__  
-    * Sprint 1 - dva dny před koncem sprintu.
-    * ![sdSprint1](../imgs/sprint1.png)
-    * Storymap
-    * ![storymap](../imgs/storymap.png)
-    * Sprint 1 - Konec
-    * ![sdSprint1](../imgs/sprint1end.png)
-* __(4) Poznatky týkající se:__
-    * Práce s týmovými nástroji
-    * Týmové spolupráce
 
-* __(5) Retrospektiva:__
+## __(3) Co už je hotovo a na čem právě pracujete__  
 
-- Co se nám líbilo a v čem cheme pokračovat
-    - Podařilo se nám úspěšně  naplánovat projekt, odstartovat první sprint
-    - Nálada v týmu je výborná, věříme že to zvládneme 👍
-    - Členové týmu pracují na tascích průběžně, aktivně komunikují, vzniklé problémy a nejasnosti neodkládají, ale aktivně řeší, aby nevznikaly prodlevy.
-    - Vývoj aplikace v Docker-kontajner-stacku.
-    - Párové programování přes VS Code LiveShare.
+### Sprint 1 - dva dny před koncem sprintu.
+   ![sdSprint1](../imgs/sprint1.png)  
 
-- Co se nám nelíbilo a chtěli bychom změnit
-    - Přišli jsme o jednoho člena týmu a tím nesplníme první sprint. Nicméně se nejedná o kritické komponenty a tudíž je možné funkční celek předat.
-    - Aktivity na projektu sice běží podle očekávání, ale vykazování práce a odpracovaných hodin ve ScrumDesku se neděje průběžně, což se mimo jiné významně (a nepříznivě) promítlo v našem burndown grafu
+### Storymap
+   ![storymap](../imgs/storymap.png)
 
-- Co chcete vylepšit
-    - Windows vs Linux file system PHP flexible. Docker je Linux, školní server bude mít Windows file systém => forward-slash vs backslash-slash.
-    - Soubory přijímat v (UTF8 vs cp1250) a bez diakritiky. 
+### Sprint 1 - Konec
+   ![sdSprint1](../imgs/sprint1end.png)
 
-* __(6) Případné dotazy na kolegy i vyučujícího__
-     - Co s tím, když vypadne člen týmu.
+## __(4) Poznatky týkající se:__
+
+### Práce s týmovými nástroji
+
+  * __Skupinová práce v Microsoft Teams__  
+    * dostupnost pro různé platformy, Windows, Mac, Linux, mobilní operační systémy
+    * týmová diskusní stěna a audiovizuální schůzky bez připomínek, technicky vše v pořádku
+    * při zahájení schůzky nutno zmínit konkrétní(ho) uživatele a poslat mu odkaz na schůzku nebo uživatelům zaslat pozvánku k účasti přímo v probíhající schůzce, jinak se o jejím konání byť jako člen společného týmu nedozví, sic jsou v MS Teams online
+    * práce s dokumenty v prostředí MS Teams - při větším počtu sdílených dokumentů nepřehledné, byť je lze topovat a záložkovat
+    * pro malé a střední projekty bychom raději místo MS Teams používali kombinaci úspěšné komomunikační platformy Discord a bezplatné webové sady Google Docs Editors
+
+  * __Připomínky k systému ScrumDesk__
+    * nekompatibilita s vybranými prohlížeči - zkušenosti: Firefox nejhorší, Google Chrome nejlepší
+    * stejná funkcionalita/odkaz mnohdy jednou funguje, podruhé nikoliv i v rámci stejného prohlížeče
+    * nutno často i vícekrát obnovit stránku, aby ScrumDesk zobrazil aktuální hodnoty
+    * pokud scrummaster přetáhne ve WORK cizí task mezi "Todo - In progress - Done", tak se automaticky přenastaví jako řešitel tohoto tasku
+    * pokud člen týmu udělá při zápisu odpracovaných hodin chybu, zapíše si více hodin, tak již záznam neupraví - ScrumDesk každý další pokud o opravu záznamu považuje za další odpracované hodiny na tasku a připočte je k již aktuálně uloženým
+    * postupně objevujeme užitečné drobnosti - například uživatelský checklist u každého tasku
+
+### Týmová spolupráce
+
+  * termíny schůzek v MS Teams domlouváme vždy s předstihem, obvykle na konci každé schůzky, na diskusní stěně
+  * počáteční problémy při plánování, kdy jsme podle vzorové šablony rozplánovali ve Scrumu i úkoly, které však spadaly do režie/přípravy projektu; do detailů jsme pak rozpracovali pouze první sprint
+  * velmi přínosná je soustavná komunikace s doc. Voráčkem, zejména pak online schůzka před spuštěním prvního sprintu
+  * celkově příprava projektu a osvojení ScrumDesku zabrala více času než se patrně očekávalo
+  * v průběhu prvního sprintu odpadl jeden člen týmu (přerušil ze zdravotních důvodů studium) - v řešení (přeplánovat práci mezi zbývající členy týmu? podaří se najít náhradníka?)
+
+## __(5) Retrospektiva:__
+
+### Co se nám líbilo a v čem cheme pokračovat
+  * Podařilo se nám úspěšně  naplánovat projekt, odstartovat první sprint
+  * Nálada v týmu je výborná, věříme že to zvládneme 👍
+  * Členové týmu pracují na tascích průběžně, aktivně komunikují, vzniklé problémy a nejasnosti neodkládají, ale aktivně řeší, aby nevznikaly prodlevy.
+  * Vývoj aplikace v Docker-kontajner-stacku.
+  * Párové programování přes VS Code LiveShare.
+
+### Co se nám nelíbilo a chtěli bychom změnit
+  * Přišli jsme o jednoho člena týmu a tím nesplníme první sprint. Nicméně se nejedná o kritické komponenty a tudíž je možné funkční celek předat.
+  * Aktivity na projektu sice běží podle očekávání, ale vykazování práce a odpracovaných hodin ve ScrumDesku se neděje průběžně, což se mimo jiné významně (a nepříznivě) promítlo v našem burndown grafu
+
+### Co chcete vylepšit
+  * Windows vs Linux file system PHP flexible. Docker je Linux, školní server bude mít Windows file systém => forward-slash vs backslash-slash.
+  * Soubory přijímat v (UTF8 vs cp1250) a bez diakritiky. 
+
+## __(6) Případné dotazy na kolegy i vyučujícího__
+* Jak postupovat v situaci, kdy přijdeme o člena týmu.
