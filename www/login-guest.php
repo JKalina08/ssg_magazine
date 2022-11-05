@@ -1,7 +1,7 @@
 <?php 
 
     session_start(); 
-    $_SESSION['id'] = 0;
+    $_SESSION['id'] = -1;
     $_SESSION['login'] = "guest";
     $_SESSION['name'] = "Neznámý návštěvník";
     $_SESSION['role'] = "guest";

@@ -1,7 +1,7 @@
-
 <?php
-require 'protection.php';
+//require 'protection.php';
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +14,7 @@ require 'protection.php';
 <div class="complet">
 <div class="form-wrapper">
 
-    <form action="newUser_b.php" method="GET">
+    <form action="newUser_b.php" method=POST>
         <H3>Přidání nového uživatele</H3>
         <!--  Jméno: -->
         <div class="form-item">
