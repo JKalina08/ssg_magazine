@@ -6,6 +6,8 @@
 Aplikace pro prohlížení, sběr příspěvků a administraci recenzního řízení
 odborného a vědeckého časopisu
 
+- [Prezentace 1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md)
+
 ## Struktura projektu: 
 ```bash 
 .
