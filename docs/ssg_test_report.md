@@ -9,7 +9,7 @@ Test report projektu týmu SSG
 
  **Přidělený tým**
 
- - bukovsky, JKalina08, JKarmasin, makovem, pospisilova
+ - bukovsky, JKalina08, JKarmasin, makovem, ~~pospisilova~~
 
 Cíle testování
 ---------------
@@ -61,14 +61,34 @@ Test report - Sprint 1
  - ověření funkcionality PHP, výkonnosti databáze - PASSED
      - 2022-10-22, MakovyPanacek - OK
 
+Použité testovací prostředí: 
+  - Linuxový server VŠPJ: https://alpha.kts.vspj.cz/
+  - Docker kontajner LAMP, který spravuje: JKalina08
+
 ### Přihlašování uživatele
 
- - přihlašování uživatele
+ - přihlašování uživatele - PASSED
+     - 2022-10-28, MakovyPanacek - OK, funguje
+     
+Zjištěné problémy a stav jejich oprav
+ - 2022-10-22, MakovyPanacek -> nefunguje zapisování nového uživatele do databáze
+     - 2022-11-02, MakovyPanacek - již opraveno
+ - 2022-11-04, MakovyPanacek -> dořešit systém vytváření nových uživatelských účtů
 
 ### Autor - Nabídnutí článku
 
- - nabídnutí článku
+ - nabídnutí článku - PASSED
+    - 2022-11-04, MakovyPanacek -> vložené články / soubory s diakritikou v názvu nejsou správně odkazovány
+    (konverze windows unix filesystemu, cp1250/utf-8)
+    - 2022-11-05, MakovyPanacek - již opraveno
 
 ### Redaktor - Přijetí článku
 
- - přijetí článku
+ - přijetí článku - PASSED
+    - 2022-11-05, MakovyPanacek - OK, funguje
+
+Test report - Sprint 1b
+---------------
+
+ - testování zvoleného uživatelského rozhraní
+    - TBD
