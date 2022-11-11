@@ -1,11 +1,11 @@
 # Úvodní týmová prezentace
 
 ## __(1) Představení týmu a jeho členů__
-  * Jiří Kalina (PO)
-  * Michal Makovec (SM)
-  * Jiří Karmasin (TM)
-  * Jiří Bukovský (TM)
-  * ~~Flowee Pospíšilová (TM)~~
+  * Jiří Kalina (PO) :pushpin:
+  * Michal Makovec (SM) :chart_with_downwards_trend:
+  * Jiří Karmasin (TM) :gem:
+  * Jiří Bukovský (TM) :pill:
+  * ~~Flowee Pospíšilová (TM)~~ :tulip:
 
 ## __(2) Stručná charakteristika implementační platformy__
    * ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
@@ -17,18 +17,37 @@
    ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
    ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
    ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+   - Instalace viz [README.md](https://github.com/JKalina08/ssg_magazine) projektu :paw_prints:.
+   - Vše v jednom IDE, používáme minimum ostatních aplikací.
+      - Prezentace a dokumentace v markdownu.
+      - ![markdown](../imgs/markdown.png)  
+
+   - ER modelování přes web aplikaci [diagrams.net](https://app.diagrams.net/) napojenou přímo do repozitáře GitHubu.
+      - ![markdown](../imgs/erd.png)  
+   - Striktně __GIT -> GitHub__ ale bez "Branches"  
+      - Před zpočetím práce na lokálu `git pull`
+      - Po skončení práce `git commit -m "feature-x ready"` a následně `git push`, aby se změny uložili na GitHub.
+      - ![git branches](../imgs/branch.png)  
    * Nejvíce předmětů a hodin strávených v HTML, CSS, PHP, JavaScript.
 
 ## __(3) Co už je hotovo a na čem právě pracujete__  
 
-### Sprint 1 - dva dny před koncem sprintu.
+### :rocket: Sprint 1 - dva dny před koncem sprintu.
    ![sdSprint1](../imgs/sprint1.png)  
 
 ### Storymap
    ![storymap](../imgs/storymap.png)
 
 ### Sprint 1 - Konec
+:four_leaf_clover:[Odkaz na funkční aplikaci](https://alpha.kts.vspj.cz/~karmasin/SSG/home.php)  
+
    ![sdSprint1](../imgs/sprint1end.png)
+
+### :exclamation: Sprint 1b - viz níže oddíl (5) .
+   ![sdSprint1](../imgs/sprint1b.png)  
+
+### Sprint 2 - Start.
+   ![sdSprint1](../imgs/sprint2.png)  
 
 ## __(4) Poznatky týkající se:__
 
@@ -66,13 +85,25 @@
   * Vývoj aplikace v Docker-kontajner-stacku.
   * Párové programování přes VS Code LiveShare.
 
-### Co se nám nelíbilo a chtěli bychom změnit
-  * Přišli jsme o jednoho člena týmu a tím nesplníme první sprint. Nicméně se nejedná o kritické komponenty a tudíž je možné funkční celek předat.
-  * Aktivity na projektu sice běží podle očekávání, ale vykazování práce a odpracovaných hodin ve ScrumDesku se neděje průběžně, což se mimo jiné významně (a nepříznivě) promítlo v našem burndown grafu
+### Co se nám nelíbilo a co bychom chtěli změnit
+  * :fire: Přišli jsme o jednoho člena týmu a tím nesplníme první sprint :fire:. Nicméně se nejedná o kritické komponenty a tudíž je možné funkční celek předat, ale dle metodiky SCRUM je potřeba celé USER-STORY přenést do dalšího sprintu nebo přenést nesplněné tasky do vyrovnávacího sprintu.
+    -  :arrow_forward: Scrum master má slovo . .   
+   ![sdMinisprint](../imgs/minisprint.png)  
+   ![sdSprint1b](../imgs/sprint1b.png)  
+  * Aktivity na projektu sice běží podle očekávání, ale vykazování práce a odpracovaných hodin ve ScrumDesku se neděje průběžně, což se mimo jiné významně (a nepříznivě) promítlo v našem burndown grafu.
+  ![burndown](../imgs/burndown.png)  
+  - :warning: Oslabení teamu v průběhu projektu bude pravděpodobně znamenat, méně dokončených US - soustředíme se hlavně na __must-have__.
 
 ### Co chcete vylepšit
   * Windows vs Linux file system PHP flexible. Docker je Linux, školní server bude mít Windows file systém => forward-slash vs backslash-slash.
-  * Soubory přijímat v (UTF8 vs cp1250) a bez diakritiky. 
+  * Soubory přijímat v (UTF8 vs cp1250) a bez diakritiky.
+  - Dokumentace, psát průběžně a nejlépe jako součást kódu, když každý děláme na něčem jiném je dokumentacu u každé funkce docela důležitá.
+  - Současná dokumentace
+      - [Dokumentace-backend.md](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md)
+
 
 ## __(6) Případné dotazy na kolegy i vyučujícího__
-* Jak postupovat v situaci, kdy přijdeme o člena týmu.
+* :question: Jak postupovat v situaci, kdy přijdeme o člena týmu.
+- :question: Jak správně dělat dokumentaci
+    -  Jako komentáře v kódu pak jí přepisovat do dokumentu? 
+    - Existuje nástroj pro sestavení dokumentace z commentů v kódu?
