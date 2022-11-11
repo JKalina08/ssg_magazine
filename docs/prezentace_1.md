@@ -26,7 +26,7 @@
       - ![markdown](../imgs/erd.png)  
    - Striktně __GIT -> GitHub__ ale bez "Branches"  
       - Před zpočetím práce na lokálu `git pull`
-      - Po skončení práce `git commit -m "feature-x ready"` a následně `git push`, aby se změny uložili na GitHub.
+      - Po skončení práce `git commit -m "feature-x ready"` a následně `git push`, aby se změny uložily na GitHub.
       - ![git branches](../imgs/branch.png)  
    * Nejvíce předmětů a hodin strávených v HTML, CSS, PHP, JavaScript.
 
