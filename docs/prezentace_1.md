@@ -87,11 +87,22 @@
 
 ### Co se nám nelíbilo a co bychom chtěli změnit
   * :fire: Přišli jsme o jednoho člena týmu a tím nesplníme první sprint :fire:. Nicméně se nejedná o kritické komponenty a tudíž je možné funkční celek předat, ale dle metodiky SCRUM je potřeba celé USER-STORY přenést do dalšího sprintu nebo přenést nesplněné tasky do vyrovnávacího sprintu.
-    -  :arrow_forward: Scrum master má slovo . .   
+
+   ![sdMinisprint](../imgs/prezentace1_sprinty.png)  
+
+   ![sdMinisprint](../imgs/prezentace1_scrumdesk_01.png)
+   
+   ![sdMinisprint](../imgs/prezentace1_scrumdesk_02.png)  
+
+  * Sprint1b 
+
    ![sdMinisprint](../imgs/minisprint.png)  
    ![sdSprint1b](../imgs/sprint1b.png)  
+
   * Aktivity na projektu sice běží podle očekávání, ale vykazování práce a odpracovaných hodin ve ScrumDesku se neděje průběžně, což se mimo jiné významně (a nepříznivě) promítlo v našem burndown grafu.
+
   ![burndown](../imgs/burndown.png)  
+
   - :warning: Oslabení teamu v průběhu projektu bude pravděpodobně znamenat, méně dokončených US - soustředíme se hlavně na __must-have__.
 
 ### Co chcete vylepšit
