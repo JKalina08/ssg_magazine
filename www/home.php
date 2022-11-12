@@ -4,7 +4,7 @@ require 'protection.php';
 include "db_conn.php";
 if (isset($_SESSION['id']) && isset($_SESSION['login'])) {
 
-
+// Jirka Bukocsky napsal comment
 // Tohle zobrazí roli jen u REDAKTORA, ale asi je lepší roli zobrazit i u autora a recenzenta    
 //if($_SESSION['role']=='redaktor'){
 //$titleName = $_SESSION['name'] . " - redaktor";
