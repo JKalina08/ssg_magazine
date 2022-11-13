@@ -79,7 +79,7 @@
 ## __(5) Retrospektiva:__
 
 ### Co se nám líbilo a v čem cheme pokračovat
-  * Podařilo se nám úspěšně  naplánovat projekt, odstartovat první sprint
+  * Podařilo se nám úspěšně naplánovat projekt, odstartovat první sprint
   * Nálada v týmu je výborná, věříme že to zvládneme 👍
   * Členové týmu pracují na tascích průběžně, aktivně komunikují, vzniklé problémy a nejasnosti neodkládají, ale aktivně řeší, aby nevznikaly prodlevy.
   * Vývoj aplikace v Docker-kontajner-stacku.
@@ -103,13 +103,15 @@
 
   ![burndown](../imgs/burndown.png)  
 
+  * linie burndown diagramu prvního sprintu byla v počáteční fázi narušena z důvodu smazání a znovuvytvoření identických tasků během spuštěného sprintu (vinou scrum mastera, který tímto způsobem administrativně opravil chybně vykázané odpracované hodiny)
+
   - :warning: Oslabení teamu v průběhu projektu bude pravděpodobně znamenat, méně dokončených US - soustředíme se hlavně na __must-have__.
 
 ### Co chcete vylepšit
   * Windows vs Linux file system PHP flexible. Docker je Linux, školní server bude mít Windows file systém => forward-slash vs backslash-slash.
   * Soubory přijímat v (UTF8 vs cp1250) a bez diakritiky.
-  - Dokumentace, psát průběžně a nejlépe jako součást kódu, když každý děláme na něčem jiném je dokumentacu u každé funkce docela důležitá.
-  - Současná dokumentace
+  * Dokumentace, psát průběžně a nejlépe jako součást kódu, když každý děláme na něčem jiném je dokumentacu u každé funkce docela důležitá.
+  * Současná dokumentace
       - [Dokumentace-backend.md](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md)
 
 
