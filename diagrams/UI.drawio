@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-14T17:58:55.704Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="4uGZfQe5tzqa0i_e5j0P" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-14T18:06:53.135Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="RbkTrbRZAcwolFIL0eaM" version="20.5.3" type="github">
   <diagram id="0C3uIZVWzqxX3jBcs8In" name="Stránka-1">
-    <mxGraphModel dx="1663" dy="462" grid="0" gridSize="49" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F1FAEE" math="0" shadow="0">
+    <mxGraphModel dx="1808" dy="542" grid="0" gridSize="49" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F1FAEE" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,19 +56,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="h9gwu4uj0Tc7yE8LhHJW-22" value="&amp;lt;User page&amp;gt;&lt;br&gt;content depends on login role" style="swimlane;whiteSpace=wrap;html=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;startSize=49;" vertex="1" parent="1">
-          <mxGeometry x="675" y="161" width="483" height="408" as="geometry" />
+          <mxGeometry x="675" y="79" width="483" height="490" as="geometry" />
         </mxCell>
         <mxCell id="h9gwu4uj0Tc7yE8LhHJW-50" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;swimlaneLine=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="h9gwu4uj0Tc7yE8LhHJW-22">
-          <mxGeometry x="65" y="68" width="300" height="196" as="geometry" />
+          <mxGeometry x="65" y="68" width="300" height="396" as="geometry" />
         </mxCell>
-        <mxCell id="h9gwu4uj0Tc7yE8LhHJW-51" value="- Jméno&#xa;- Heslo&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h9gwu4uj0Tc7yE8LhHJW-50">
-          <mxGeometry y="26" width="300" height="40" as="geometry" />
+        <mxCell id="h9gwu4uj0Tc7yE8LhHJW-51" value="- Jméno&#xa;- Heslo&#xa;+ Název&#xa;+ Náhled&#xa;+ Autor&#xa;+ Autorský tým&#xa;+ Téma&#xa;+ Recenzent 1&#xa;+ Recenze 1&#xa;+ Aktuálnost&#xa;+ Orogonalita&#xa;+ Jazyková úroveň&#xa;+ Recenzent 2&#xa;+ Recenze 2&#xa;+ Stav&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h9gwu4uj0Tc7yE8LhHJW-50">
+          <mxGeometry y="26" width="300" height="240" as="geometry" />
         </mxCell>
         <mxCell id="h9gwu4uj0Tc7yE8LhHJW-52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h9gwu4uj0Tc7yE8LhHJW-50">
-          <mxGeometry y="66" width="300" height="8" as="geometry" />
+          <mxGeometry y="266" width="300" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="h9gwu4uj0Tc7yE8LhHJW-53" value="+ Odhlásit se&#xa;+ Vyhledej článek&#xa;+ Změna hesla&#xa;+ overHeslo(heslo: string) : bool&#xa;. . .&#xa;TODO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h9gwu4uj0Tc7yE8LhHJW-50">
-          <mxGeometry y="74" width="300" height="122" as="geometry" />
+        <mxCell id="h9gwu4uj0Tc7yE8LhHJW-53" value="+ Odhlásit se&#xa;+ Vyhledej článek&#xa;+ Název &#xa;+ overHeslo(heslo: string) : bool&#xa;. . .&#xa;TODO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h9gwu4uj0Tc7yE8LhHJW-50">
+          <mxGeometry y="274" width="300" height="122" as="geometry" />
         </mxCell>
         <mxCell id="h9gwu4uj0Tc7yE8LhHJW-29" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;strokeColor=#6D8E8F;" edge="1" parent="1" source="h9gwu4uj0Tc7yE8LhHJW-4" target="h9gwu4uj0Tc7yE8LhHJW-22">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -113,7 +113,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="h9gwu4uj0Tc7yE8LhHJW-66" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Administrátor&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="465" y="740" width="160" height="90" as="geometry" />
+          <mxGeometry x="431" y="643" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="h9gwu4uj0Tc7yE8LhHJW-67" style="edgeStyle=none;rounded=0;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.563;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;strokeWidth=1;startArrow=none;startFill=0;endArrow=block;endFill=0;endSize=6;" edge="1" parent="1" source="h9gwu4uj0Tc7yE8LhHJW-62" target="h9gwu4uj0Tc7yE8LhHJW-62">
           <mxGeometry relative="1" as="geometry" />
