@@ -6,7 +6,9 @@
 Aplikace pro prohlížení, sběr příspěvků a administraci recenzního řízení
 odborného a vědeckého časopisu
 
-- [Prezentace 1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md)
+- [Odkaz na funkční aplikaci](https://alpha.kts.vspj.cz/~karmasin/SSG/info.html) :mushroom:
+- [Dokumentace backend](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :bookmark_tabs:
+- [Prezentace 1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md) :ledger:
 
 ## Struktura projektu: 
 ```bash 
