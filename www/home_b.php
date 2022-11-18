@@ -19,7 +19,6 @@ require("db_conn.php");
 
 //$_FILES["file"]["name"] = str_replace(' ', '_', $_FILES["file"]["name"]);
 
-
 //if (file_exists("res/" . $_FILES["file"]["name"]))
 //  {
 //  echo $_FILES["file"]["name"] . " already exists. ";
@@ -33,39 +32,63 @@ require("db_conn.php");
 //  move_uploaded_file($_FILES["file"]["tmp_name"], "res/" . $_FILES["file"]["name"]);
 //$name = $_FILES["file"]["name"];
 
+
   $id = $_POST["id"];
   $recenzent1 = $_POST["rec1"];
+  $recenzent2 = $_POST["rec2"];
+
+//  echo "id: " . $id;
+//  echo "<br>";
+//  echo "rec1: " . $recenzent1;
+//  echo "<br>";
+//  echo "akt1: " . $_POST["new_akt1"];
+//  echo "<br>";
+//  echo "orig1: " . $_POST["new_orig1"];
+//  echo "<br>";
+//  echo "lang1: " . $_POST["new_lang1"];
+//  echo "<br>";
+//  echo "rec2: " . $recenzent2;
+//  echo "<br>";
+//  echo "akt2: " . $_POST["new_akt2"];
+//  echo "<br>";
+//  echo "orig2: " . $_POST["new_orig2"];
+//  echo "<br>";
+//  echo "lang2: " . $_POST["new_lang2"];
+//  echo "<br>";
+//  echo "status: " . $status;
+//  echo "<br>"; 
+
+
   if($_POST["new_akt1"]=='') $akt1 = 0; else $akt1 = $_POST["new_akt1"];
   if($_POST["new_orig1"]=='') $orig1 = 0; else $orig1 = $_POST["new_orig1"];
   if($_POST["new_lang1"]=='') $lang1 = 0; else $lang1 = $_POST["new_lang1"];
 
-  $recenzent2 = $_POST["rec2"];
+
   if($_POST["new_akt2"]=='') $akt2 = 0; else $akt2 = $_POST["new_akt2"];
   if($_POST["new_orig2"]=='') $orig2 = 0; else $orig2 = $_POST["new_orig2"];
   if($_POST["new_lang2"]=='') $lang2 = 0; else $lang2 = $_POST["new_lang2"];
 
   $status = $_POST["status"];
-
- //echo "id: " . $id;
- //echo "<br>";
- //echo "rec1: " . $recenzent1;
- //echo "<br>";
- //echo "akt1: " . $akt1;
- //echo "<br>";
- //echo "orig1: " . $orig1;
- //echo "<br>";
- //echo "lang1: " . $lang1;
- //echo "<br>";
- //echo "rec2: " . $recenzent2;
- //echo "<br>";
- //echo "akt2: " . $akt2;
- //echo "<br>";
- //echo "orig2: " . $orig2;
- //echo "<br>";
- //echo "lang2: " . $lang2;
- //echo "<br>";
- //echo "status: " . $status;
- //echo "<br>"; 
+//  echo "id: " . $id;
+//  echo "<br>";
+//  echo "rec1: " . $recenzent1;
+//  echo "<br>";
+//  echo "akt1: " . $akt1;
+//  echo "<br>";
+//  echo "orig1: " . $orig1;
+//  echo "<br>";
+//  echo "lang1: " . $lang1;
+//  echo "<br>";
+//  echo "rec2: " . $recenzent2;
+//  echo "<br>";
+//  echo "akt2: " . $akt2;
+//  echo "<br>";
+//  echo "orig2: " . $orig2;
+//  echo "<br>";
+//  echo "lang2: " . $lang2;
+//  echo "<br>";
+//  echo "status: " . $status;
+//  echo "<br>"; 
 
  $sql = "UPDATE ssg_article SET status='$status', recenzent1='$recenzent1', akt1='$akt1', orig1='$orig1', lang1='$lang1', recenzent2='$recenzent2', akt2='$akt2', orig2='$orig2', lang2='$lang2' 
             WHERE '$id' = id_art";
@@ -73,15 +96,20 @@ require("db_conn.php");
 //echo $sql;
 
 if (mysqli_query($conn, $sql)) {
-  echo '<script language="javascript">';
-  echo 'alert("Success INSERT")';
-  echo '</script>';
+
+  //  echo '<script language="javascript">';
+//  echo 'alert("Success INSERT")';
+//  echo '</script>';
+
 } else {
-  echo '<script language="javascript">';
-  echo 'alert("Error INSERT")';
-  echo '</script>';
+
+  //  echo '<script language="javascript">';
+//  echo 'alert("Error INSERT")';
+//  echo '</script>';
 }
-mysqli_close($conn);          
+mysqli_close($conn);
+header("Location: home.php");
+exit();           
 
 //  $msg = "Stored in: " . "res/" . $_FILES["file"]["name"];
 //  echo '<script language="javascript">';
@@ -91,7 +119,7 @@ mysqli_close($conn);
 ?>   
 
 
-<HTML>
+<!-- <HTML>
 <HEAD>
 <TITLE>Aktializace článku</TITLE>
     <link rel="stylesheet" type="text/css" href="style-form.css">
@@ -110,4 +138,4 @@ mysqli_close($conn);
   </div>
   </div>
   </div>
-</BODY>  
+</BODY>   -->

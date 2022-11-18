@@ -1,6 +1,6 @@
 <?php
 require 'protection.php';
-
+include "db_conn.php";
 ?>
 
 <HTML>
@@ -29,18 +29,64 @@ require 'protection.php';
                     <option value="SOC">Společenské vědy</option>
                 </select>
             </div>
+            Spoluautoři:
+            <div class="box">
+           
+<?php
+// vypsani roletky se jmeny autoru ====================================================================
+
+    echo "<div class=\"box\">";
+    echo "<td><select name=\"coautor1\" id=\"coautor1\">";
+        echo "<option selected value=\"0\">VYBER</option>";
+
+    $sql = "select id_staff, user_full_name from ssg_users where tag='autor'";
+    $autors = mysqli_query($conn, $sql);
+    while ($autor = mysqli_fetch_array($autors)) {
+        $aut_name = $autor['user_full_name'];
+        $aut_id = $autor['id_staff'];
+        if($_SESSION['id'] != $aut_id){ echo "<option value=".$aut_id.">".$aut_name."</option>";}
+    }
+    echo "</select></td>";
+    echo "</div>";
+
+    echo "<div class=\"box\">";
+    echo "<td><select name=\"coautor2\" id=\"coautor2\">";
+        echo "<option selected value=\"0\">VYBER</option>";
+
+    $sql = "select id_staff, user_full_name from ssg_users where tag='autor'";
+    $autors = mysqli_query($conn, $sql);
+    while ($autor = mysqli_fetch_array($autors)) {
+        $aut_name = $autor['user_full_name'];
+        $aut_id = $autor['id_staff'];
+        if($_SESSION['id'] != $aut_id){ echo "<option value=".$aut_id.">".$aut_name."</option>";}
+    }
+    echo "</select></td>";
+    echo "</div>";
+
+    echo "<div class=\"box\">";
+    echo "<td><select name=\"coautor3\" id=\"coautor3\">";
+        echo "<option selected value=\"0\">VYBER</option>";
+
+    $sql = "select id_staff, user_full_name from ssg_users where tag='autor'";
+    $autors = mysqli_query($conn, $sql);
+    while ($autor = mysqli_fetch_array($autors)) {
+        $aut_name = $autor['user_full_name'];
+        $aut_id = $autor['id_staff'];
+        if($_SESSION['id'] != $aut_id){ echo "<option value=".$aut_id.">".$aut_name."</option>";}
+    }
+    echo "</select></td>";
+    echo "</div>";
+
+    mysqli_close($conn);
+
+//================ konec autoru ===============================================================================
+?>
             <br>
-            TODO: Spoluautoři (jak?)<br>
-            <br>
-            <div class="button">
+            <div class="button-panel">
                 <label for="file">DOKUMENT:</label>
                 <input  type="file" id="file" name="file" accept="application/pdf, application/vnd.openxmlformats-officedocument.wordprocessingml.document">
             </div>
-
-<!--            <img class="photo" src="img/default.jpg">
-            <input type="hidden" name="id_graveB" value= <?//php echo $_POST['id_graveA']; ?>>
--->            
-            
+         
             <div class="button-panel">
                 <INPUT TYPE=SUBMIT class="button" VALUE="Vytvoř článek">
             </div>
