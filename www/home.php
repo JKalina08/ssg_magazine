@@ -189,14 +189,14 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
 
             <!-- ====== ID článku =======================================================================================================================  -->      
             <?php  
-            if($role == "redaktor" or $role == "šéfredaktor") {
-                echo "<td>".$id."</td>";
-            }
+                if($role == "redaktor" or $role == "šéfredaktor") {
+                    echo "<td>".$id."</td>";
+                }
             ?>
 
             <!-- ====== Název článku ==================================================================================================================== -->
             <?php
-            echo "<td>".$title."</td>";
+                echo "<td>".$title."</td>";
             ?>
 
             <!-- ====== Náhled ========================================================================================================================-->
@@ -209,11 +209,11 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
 
             <!-- ====== Autor =========================================================================================================================-->
             <?php            
-            $sql = "select user_full_name from ssg_users where id_staff='".$autor."'";
-            $autor_row = mysqli_query($conn, $sql);
-            $autor_name = mysqli_fetch_array($autor_row);
-            if($role != "autor") 
-                echo "<td>".$autor_name['user_full_name']."</td>";
+                $sql = "select user_full_name from ssg_users where id_staff='".$autor."'";
+                $autor_row = mysqli_query($conn, $sql);
+                $autor_name = mysqli_fetch_array($autor_row);
+                if($role != "autor") 
+                    echo "<td>".$autor_name['user_full_name']."</td>";
             ?>            
 
             <!-- ====== Autorský tým ==================================================================================================================-->
@@ -265,15 +265,39 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                 if($recenzent1 == 0) {
                     echo "<td></td>";
                 } else {
+                    if($recenzent1 == $_SESSION['id']){ //zobrazim modal s moznosti editu pro odpovidajiciho recenzenta
             ?>
-                    <td>
+                        <td>
+                        <button onclick="hideRec1(<?php echo $id; ?>)">Uprav text</button>
+                        <div <?php echo "id=\"rec1-" . $id ."\""; ?> class="modal">
+                            <div class="modal-content">
+                                <button onclick="hideRec1(<?php echo $id; ?>)">&times;</button>
+                                <p>
+                                    (debugg:) id článku= " <?php echo $id; ?>
+                                    <h1>Recenze:</h1>
+                                    <br>
+                                    <form action="recenze_b.php" method=post id="textrec1_form">
+                                        <textarea rows="10" cols="80" name="new_rec1" form="textrec1_form"><?php echo $article['recenze1']; ?></textarea>
+                                        <br>
+                                        <input type="hidden" name="id" value="<?php echo $id; ?>"></input>
+                                        <input type="hidden" name="new_rec2" value="<?php echo $recenze2; ?>"></input>
+                                        <input type="submit" value="Ulož změny"></input>
+                                    </form>                  
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+            <?php
+                    } else { // Zobrazim modal jen na vypsani recenze bez uprav:
+            ?>
+                        <td>
                         <button onclick="hideRec1(<?php echo $id; ?>)">Zobraz text</button>
                         <div <?php echo "id=\"rec1-" . $id ."\""; ?> class="modal">
                             <div class="modal-content">
                                 <button onclick="hideRec1(<?php echo $id; ?>)">&times;</button>
                                 <p> <?php 
-                                    // Tady vytvářím soupis spoluautorů
-                                    echo "id článku= " . $id;
+                                    // Tady vypisu text recenze
+                                    echo "(debugg:) id článku= " . $id;
                                     echo "<h1>Recenze:</h1>";
                                     echo "<br>";
                                     echo $article['recenze1'];                  
@@ -281,23 +305,48 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                             </div>
                         </div>
                     </td>
+            <?php        
+                    }
 
-            <?php
             }
 
             // ====== Text Recenze 2 ================================================================================================================-->     
             if($recenzent2 == 0) {
                 echo "<td></td>";
             } else {
-            ?>
-                <td>
+                if($recenzent2 == $_SESSION['id']){ //zobrazim modal s moznosti editu pro odpovidajiciho recenzenta
+        ?>
+                    <td>
+                    <button onclick="hideRec2(<?php echo $id; ?>)">Uprav text</button>
+                    <div <?php echo "id=\"rec2-" . $id ."\""; ?> class="modal">
+                        <div class="modal-content">
+                            <button onclick="hideRec2(<?php echo $id; ?>)">&times;</button>
+                            <p>
+                                (debugg:) id článku= " <?php echo $id; ?>
+                                <h1>Recenze:</h1>
+                                <br>
+                                <form action="recenze_b.php" method=post id="textrec2_form">
+                                    <textarea rows="10" cols="80" name="new_rec2" form="textrec2_form"><?php echo $article['recenze2']; ?></textarea>
+                                    <br>
+                                    <input type="hidden" name="id" value="<?php echo $id; ?>"></input>
+                                    <input type="hidden" name="new_rec1" value="<?php echo $recenze1; ?>"></input>
+                                    <input type="submit" value="Ulož změny"></input>
+                                </form>                  
+                            </p>
+                        </div>
+                    </div>
+                </td>
+        <?php
+                } else { // Zobrazim modal jen na vypsani recenze bez uprav:
+        ?>
+                    <td>
                     <button onclick="hideRec2(<?php echo $id; ?>)">Zobraz text</button>
                     <div <?php echo "id=\"rec2-" . $id ."\""; ?> class="modal">
                         <div class="modal-content">
                             <button onclick="hideRec2(<?php echo $id; ?>)">&times;</button>
                             <p> <?php 
-                                // Tady vytvářím soupis spoluautorů
-                                echo "id článku= " . $id;
+                                // Tady vypisu text recenze
+                                echo "(debugg:) id článku= " . $id;
                                 echo "<h1>Recenze:</h1>";
                                 echo "<br>";
                                 echo $article['recenze2'];                  
@@ -305,9 +354,10 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                         </div>
                     </div>
                 </td>
+        <?php        
+                }
 
-            <?php
-            }
+        }
             ?>
 
             <!-- ====== Recenzent 1 ===================================================================================================================-->
@@ -315,7 +365,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
     
                 <?php  
                 if($role == "redaktor" or $role == "šéfredaktor"){
-                    echo "<td><select name=\"rec1\" id=\"rec1\">";
+                    echo "<td><select name=\"rec1\" >";
                     if($recenzent1 == 0) {
                         echo "<option selected value=\"0\">VYBER</option>";
                     } else {
@@ -337,24 +387,24 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                     $sql = "select user_full_name from ssg_users where id_staff='" . $recenzent1 . "'";
                     $recenzents = mysqli_query($conn, $sql);
                     $recenzent = mysqli_fetch_array($recenzents);
-                    echo "<td><input type=\"hidden\" name=\"rec1\" id=\"rec1\" value=\"". $recenzent1 ."\"></input>" . $recenzent['user_full_name'] . "</td>";
+                    echo "<td><input type=\"hidden\" name=\"rec1\" value=\"". $recenzent1 ."\"></input>" . $recenzent['user_full_name'] . "</td>";
             
                 }        
                 
             // ====== Hodnocení 1 =====================================================================================================================-->
             if ($recenzent1 == $_SESSION['id']){
-                echo "<td><input type=\"text\" size=\"1\" id=\"new_akt1\" name=\"new_akt1\" value=\"" . $akt1 ."\">/5</td>";
-                echo "<td><input type=\"text\" size=\"1\" id=\"new_orig1\" name=\"new_orig1\" value=\"" . $orig1 ."\">/5</td>";
-                echo "<td><input type=\"text\" size=\"1\" id=\"new_lang1\" name=\"new_lang1\" value=\"" . $lang1 ."\">/5</td>";
+                echo "<td><input type=\"text\" size=\"1\" name=\"new_akt1\" value=\"" . $akt1 ."\">/5</td>";
+                echo "<td><input type=\"text\" size=\"1\" name=\"new_orig1\" value=\"" . $orig1 ."\">/5</td>";
+                echo "<td><input type=\"text\" size=\"1\" name=\"new_lang1\" value=\"" . $lang1 ."\">/5</td>";
             } else {
-                if ($akt1 != 0) {echo "<td><input type=\"hidden\" name=\"new_akt1\" id=\"new_akt1\" value=\"". $akt1 ."\"></input>".$akt1."/5</td>";} else { echo "<td></td>";}
-                if ($orig1 != 0) {echo "<td><input type=\"hidden\" name=\"new_orig1\" id=\"new_orig1\" value=\"". $orig1 ."\"></input>".$orig1."/5</td>";} else { echo "<td></td>";}
-                if ($lang1 != 0) {echo "<td><input type=\"hidden\" name=\"new_lang1\" id=\"new_lang1\" value=\"". $lang1 ."\"></input>".$lang1."/5</td>";} else { echo "<td></td>";}
+                if ($akt1 != 0) {echo "<td><input type=\"hidden\" name=\"new_akt1\" value=\"". $akt1 ."\"></input>".$akt1."/5</td>";} else { echo "<td></td>";}
+                if ($orig1 != 0) {echo "<td><input type=\"hidden\" name=\"new_orig1\" value=\"". $orig1 ."\"></input>".$orig1."/5</td>";} else { echo "<td></td>";}
+                if ($lang1 != 0) {echo "<td><input type=\"hidden\" name=\"new_lang1\" value=\"". $lang1 ."\"></input>".$lang1."/5</td>";} else { echo "<td></td>";}
             }
 
             // ====== Recenzent 2 ===================================================================================================================-->
             if ($role == "redaktor" or $role == "šéfredaktor"){
-                echo "<td><select name=\"rec2\" id=\"rec2\">";
+                echo "<td><select name=\"rec2\" >";
                 if($recenzent2 == 0) {
                     echo "<option selected value=\"0\">VYBER</option>";
                 } else {
@@ -376,23 +426,23 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                 $sql = "select user_full_name from ssg_users where id_staff='" . $recenzent2 . "'";
                 $recenzents = mysqli_query($conn, $sql);
                 $recenzent = mysqli_fetch_array($recenzents);
-                echo "<td><input type=\"hidden\" name=\"rec2\" id=\"rec2\" value=\"". $recenzent2 ."\"></input>" . $recenzent['user_full_name'] . "</td>";
+                echo "<td><input type=\"hidden\" name=\"rec2\" value=\"". $recenzent2 ."\"></input>" . $recenzent['user_full_name'] . "</td>";
             }        
       
             // ====== Hodnocení 2 =====================================================================================================================-->                
             if ($recenzent2 == $_SESSION['id']){
-                echo "<td><input type=\"text\" size=\"1\" id=\"new_akt2\" name=\"new_akt2\" value=\"" . $akt2 ."\">/5</td>";
-                echo "<td><input type=\"text\" size=\"1\" id=\"new_orig2\" name=\"new_orig2\" value=\"" . $orig2 ."\">/5</td>";
-                echo "<td><input type=\"text\" size=\"1\" id=\"new_lang2\" name=\"new_lang2\" value=\"" . $lang2 ."\">/5</td>";
+                echo "<td><input type=\"text\" size=\"1\" name=\"new_akt2\" value=\"" . $akt2 ."\">/5</td>";
+                echo "<td><input type=\"text\" size=\"1\" name=\"new_orig2\" value=\"" . $orig2 ."\">/5</td>";
+                echo "<td><input type=\"text\" size=\"1\" name=\"new_lang2\" value=\"" . $lang2 ."\">/5</td>";
             } else {
-                if ($akt2 != 0) {echo "<td><input type=\"hidden\" name=\"new_akt2\" id=\"new_akt2\" value=\"". $akt2 ."\"></input>".$akt2."/5</td>";} else { echo "<td></td>";}
-                if ($orig2 != 0) {echo "<td><input type=\"hidden\" name=\"new_orig2\" id=\"new_orig2\" value=\"". $orig2 ."\"></input>".$orig2."/5</td>";} else { echo "<td></td>";}
-                if ($lang2 != 0) {echo "<td><input type=\"hidden\" name=\"new_lang2\" id=\"new_lang2\" value=\"". $lang2 ."\"></input>".$lang2."/5</td>";} else { echo "<td></td>";}
+                if ($akt2 != 0) {echo "<td><input type=\"hidden\" name=\"new_akt2\" value=\"". $akt2 ."\"></input>".$akt2."/5</td>";} else { echo "<td></td>";}
+                if ($orig2 != 0) {echo "<td><input type=\"hidden\" name=\"new_orig2\" value=\"". $orig2 ."\"></input>".$orig2."/5</td>";} else { echo "<td></td>";}
+                if ($lang2 != 0) {echo "<td><input type=\"hidden\" name=\"new_lang2\" value=\"". $lang2 ."\"></input>".$lang2."/5</td>";} else { echo "<td></td>";}
             }
             ?>
 
             <!-- ====== Status ========================================================================================================================-->            
-            <td><select name="status" id="status" >
+            <td><select name="status">
                     <option <?php if($status == 1) echo "selected" ?> value="1">Nově podaný</option>
                     <option <?php if($status == 2) echo "selected" ?> value="2">Čeká na stanovení recenzentů</option>
                     <option <?php if($status == 3) echo "selected" ?> value="3">Recenzní řízení probíhá</option>
@@ -617,7 +667,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                 $sql = "select user_full_name from ssg_users where id_staff='" . $recenzent2 . "'";
                 $recenzents = mysqli_query($conn, $sql);
                 $recenzent = mysqli_fetch_array($recenzents);
-                echo "<td><input type=\"hidden\" name=\"rec2\" id=\"rec2\" value=\"". $recenzent2 ."\"></input>" . $recenzent['user_full_name'] . "</td>";
+                echo "<td>" . $recenzent['user_full_name'] . "</td>";
        
    
             // ====== Hodnocení 2 =====================================================================================================================-->                
