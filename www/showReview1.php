@@ -1,6 +1,7 @@
 <?php
 require 'protection.php';
 require("db_conn.php");
+// Kontrola prihlaseni
 
   $new_id = $_POST["id"];
   $autor = $_POST["autor"];
