@@ -65,6 +65,11 @@
      </div>
     </div>
 
-  </div></div>
+    <br /><small>Tato aplikace je výsledkem školního projektu v kurzu <a href="https://isz.vspj.cz/studijni-plany/detail-predmetu/plan/34/predmet/1609" target="_blank">Řízení softwarových projektů</a> @ <a href="http://www.vspj.cz/" target="_blank">vspj.cz</a><br />
+    Nejedná se o stránky skutečného odborného časopisu!
+  </small>
+
+  </div>
+</div>
  </body>
 </html>

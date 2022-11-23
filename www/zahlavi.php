@@ -6,7 +6,7 @@
     </button>
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <?php if ($_SESSION['role'] == "redaktor" or $_SESSION['role'] == "šéfredaktor" or $_SESSION['role'] == "recenzent"  or $_SESSION['role'] == "autor"){ ?>
+    <?php if ($_SESSION['role'] == "autor"){ ?>
       <form class="d-flex me-auto" action="newArticle_a.php" method="post">
         <input class="btn btn-outline-success btn" type="submit" title="Přidat nový článek" name="newArticle" value="Přidat nový článek">&nbsp;
       </form>
@@ -40,17 +40,20 @@
     <?php }?>
 
     <?php if ($_SESSION['role'] == "redaktor" or $_SESSION['role'] == "šéfredaktor" or $_SESSION['role'] == "recenzent"  or $_SESSION['role'] == "autor"){ ?>
+      <div class="d-flex ms-auto justify-content-end">
       <div>
-        <i class="fa fa-user-o"></i> <b><?php echo $titleName;?></b>&nbsp;&nbsp;<a class="btn btn-primary btn-sm" href="logout.php" title="Log Out">odhlásit</a>
+        <i class="fa fa-user-o"></i>&nbsp;<b><?php echo $titleName;?></b>&nbsp;&nbsp;<a class="btn btn-primary btn-sm" href="logout.php" title="Log Out">odhlásit</a>
       </div>
-    <?php }?>
+      </div>
+      <?php }?>
 
     <?php if ($_SESSION['role'] == "guest"){ ?>
       <div>
+      <div>
         <a class="btn btn-outline-success btn" href="logout.php" title="Log Out">Zpět na přihlášení</a>
       </div>
-    <?php }?>
-
+      </div>
+      <?php }?>
 
     </div>
   </div>
