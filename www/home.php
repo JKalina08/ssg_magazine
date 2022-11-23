@@ -4,7 +4,7 @@ require 'protection.php';
 include "db_conn.php";
 if (isset($_SESSION['id']) && isset($_SESSION['login'])) {
 
-// Jirka Bukocsky napsal comment
+// Jirka Bukovsky napsal comment
 // Tohle zobrazí roli jen u REDAKTORA, ale asi je lepší roli zobrazit i u autora a recenzenta    
 //if($_SESSION['role']=='redaktor'){
 //$titleName = $_SESSION['name'] . " - redaktor";
@@ -14,16 +14,18 @@ if (isset($_SESSION['id']) && isset($_SESSION['login'])) {
 $role = $_SESSION['role'];
 $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // všechno za $role smazat, je to jen debugging
 
- ?>
+?>
 <!---------------------------------------------------------------->
 
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
-    <title>SSG Mazagín</title>
-    <link rel="stylesheet" type="text/css" href="style-main.css">
-    <style> /* PROC TOHLE KURVA NEFUNGUJE V .css???? */
+    <meta charset="utf-8">
+    <title>SSG Magazín</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style> /* Bohumile, "kurva" se nerika :) */
         .modal {
             display: none;
             position: fixed;
@@ -43,11 +45,14 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
             width: 70%;
             box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
         }
+        
+         table td {
+             font-size: 14px;
+        }
         </style>
-
 </head>
-
 <body>
+
     <!-- ================ JAVA SCRIPT =============================== -->
     <script>
         function hideInfo($f_coaut_id) {
@@ -90,46 +95,21 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
         }
     </script>
 
-    <!-- ================ HORNI LISTA =============================== -->
-    <div class="logo">
-        SSG MAGAZÍN - <?php echo $titleName;?>
-    </div>     
+    <!-- ================ HORNI LISTA, PANEL S TLACITKY =============================== -->
+    <?php
+    include 'zahlavi.php';
+    ?>
 
-    <!-- ================ HORNI PANEL S TLACITKY=============================== -->
-    <div class="button-panel">     
-        <form action="logout.php" method="post">
-		<input type="submit" class="button" title="Log Out" name="logout" value="Odhlásit se">
-        </form>
-
-        <form action="newArticle_a.php" method="post">   
-		<input type="submit" class="button" title="Přidat nový článek" name="newArticle" value="Přidat nový článek">
-        </form>
-     
-        <!-- <form action="searchCorpse_a.php" method="post">
-		<input type="submit" class="button" title="Vyhledej" name="search" value="Vyhledej článek">
-        </form> -->
-
-        <?php if ($_SESSION['role'] == "redaktor"){ ?>
-        <!-- <form action="home.php" method="post">
-		<input type="submit" class="button" title="Něco pouze pro redaktora 1 TBD" name="newGrave" value="Něco pouze pro redaktora 1 TBD">
-        </form> -->
-     
-        <form action="newUser_a.php" method="post">   
-		<input type="submit" class="button" title="Přidat nového autora" name="newUser" value="Přidat nového autora">
-        </form>
-        <?php }?>
-
-        <!-- <button type="button" class="button" onclick="window.location.href='home.php'" >Zobraz všechny články</button> -->
-
-    </div>
-
-    <hr>    
+    <div class="container-fluid">
+  
+    <h2 align="center">SSG Magazín</h2>
+    <hr><br />     
      
     <!-- ======================== TABULKA "IN PROGRESS" ==================================  -->
     <?php 
     if($_SESSION['id']!=-1){  // rozpracovane clanky vypisuji jen pro neguesta 
     ?>
-    <h2>Přehled rozpracovaných článků v systému:</h2>
+    <h3>Přehled rozpracovaných článků v systému:</h3>
  
     <?php
     // ====== Selekce článků podle relevance k aktuálnímu uživateli ===========================================================================-->
@@ -145,7 +125,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
 
     $result = mysqli_query($conn, $sql);
     ?>
-    <table border="1">
+    <table border="0" class="table table-striped table-hover table-bordered table-responsive table-sm">
         <tr> <!--Vypíšu hlavičku, která je zatím natvrdo pro všechny stejná - TODO: oříznout slopupce podle uživatele------------> 
             <?php if($role == "redaktor" or $role == "šéfredaktor") echo "<th>ID</th>"; ?>          
             <th>Název</th>
@@ -163,7 +143,8 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
             <th>Aktuálnost</th>
             <th>Originalita</th>
             <th>Jazyková úroveň</th>
-            <?php if($role != "guest") echo "<th>Status</th>"; ?>                                    
+            <?php if($role != "guest") echo "<th>Status</th>"; ?>
+            <th></th>       
         </tr> 
     <?php
     while ($article = mysqli_fetch_array($result)) {
@@ -203,7 +184,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
             <td> 
                 <form action="showFile.php" method=post>
                     <input type="hidden" name="file" value= <?php echo $file; ?>>
-                    <input type="submit" value="ZOBRAZ PDF">
+                    <input type="submit" class="btn btn-outline-success btn-sm" value="ZOBRAZ PDF">
                 </form> 
             </td> 
 
@@ -218,10 +199,10 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
 
             <!-- ====== Autorský tým ==================================================================================================================-->
             <td>
-                <button onclick="hideInfo(<?php echo $id; ?>)">Zobraz tým</button>
+                <button class="btn btn-outline-success btn-sm" onclick="hideInfo(<?php echo $id; ?>)">Zobraz tým</button>
                 <div <?php echo "id=\"coautors" . $id ."\""; ?> class="modal">
                     <div class="modal-content">
-                        <button onclick="hideInfo(<?php echo $id; ?>)">&times;</button>
+                        <button class="btn btn-success btn-sm" onclick="hideInfo(<?php echo $id; ?>)">zavřít</button>
                         <p> <?php 
                         // Tady vytvářím soupis spoluautorů
                             echo "id článku= " . $id;
@@ -267,10 +248,10 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                 } else {
             ?>
                     <td>
-                        <button onclick="hideRec1(<?php echo $id; ?>)">Zobraz text</button>
+                        <button class="btn btn-outline-success btn-sm" onclick="hideRec1(<?php echo $id; ?>)">Zobraz text</button>
                         <div <?php echo "id=\"rec1-" . $id ."\""; ?> class="modal">
                             <div class="modal-content">
-                                <button onclick="hideRec1(<?php echo $id; ?>)">&times;</button>
+                                <button class="btn btn-success btn-sm" onclick="hideRec1(<?php echo $id; ?>)">zavřít</button>
                                 <p> <?php 
                                     // Tady vytvářím soupis spoluautorů
                                     echo "id článku= " . $id;
@@ -291,10 +272,10 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
             } else {
             ?>
                 <td>
-                    <button onclick="hideRec2(<?php echo $id; ?>)">Zobraz text</button>
+                    <button class="btn btn-outline-success btn-sm" onclick="hideRec2(<?php echo $id; ?>)">Zobraz text</button>
                     <div <?php echo "id=\"rec2-" . $id ."\""; ?> class="modal">
                         <div class="modal-content">
-                            <button onclick="hideRec2(<?php echo $id; ?>)">&times;</button>
+                            <button class="btn btn-success btn-sm" onclick="hideRec2(<?php echo $id; ?>)">zavřít</button>
                             <p> <?php 
                                 // Tady vytvářím soupis spoluautorů
                                 echo "id článku= " . $id;
@@ -421,7 +402,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
 <!-- ==================================================================================================================================================================== -->
 <!-- ======== TABULKA S ARCHIVOVANYMI CLANKY ============================================================================================================================ -->
 <!-- ==================================================================================================================================================================== -->
-    <h2>Přehled už vydaných článků:</h2>
+    <h3>Přehled již vydaných článků:</h3>
  
     <?php
     // ====== Selekce článků podle relevance k aktuálnímu uživateli ===========================================================================-->
@@ -437,7 +418,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
 
     $result = mysqli_query($conn, $sql);
     ?>
-    <table border="1">
+    <table border="0" class="table table-striped table-hover table-bordered table-responsive table-sm">
         <tr> <!--Vypíšu hlavičku, která je zatím natvrdo pro všechny stejná - TODO: oříznout slopupce podle uživatele------------> 
             <?php if($role == "redaktor" or $role == "šéfredaktor") echo "<th>ID</th>"; ?>          
             <th>Název</th>
@@ -492,7 +473,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
             <td> 
                 <form action="showFile.php" method=post>
                     <input type="hidden" name="file" value= <?php echo $file; ?>>
-                    <input type="submit" value="ZOBRAZ PDF">
+                    <input type="submit" class="btn btn-outline-success btn-sm" value="ZOBRAZ PDF">
                 </form> 
             </td> 
 
@@ -507,10 +488,10 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
 
             <!-- ====== Autorský tým ==================================================================================================================-->
             <td>
-                <button onclick="hideInfo(<?php echo $id; ?>)">Zobraz tým</button>
+                <button class="btn btn-outline-success btn-sm" onclick="hideInfo(<?php echo $id; ?>)">Zobraz tým</button>
                 <div <?php echo "id=\"coautors" . $id ."\""; ?> class="modal">
                     <div class="modal-content">
-                        <button onclick="hideInfo(<?php echo $id; ?>)">&times;</button>
+                        <button class="btn btn-success btn-sm" onclick="hideInfo(<?php echo $id; ?>)">zavřít</button>
                         <p> <?php 
                         // Tady vytvářím soupis spoluautorů
                             echo "id článku= " . $id;
@@ -556,10 +537,10 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                 } else {
             ?>
                     <td>
-                        <button onclick="hideRec1(<?php echo $id; ?>)">Zobraz text</button>
+                        <button class="btn btn-outline-success btn-sm" onclick="hideRec1(<?php echo $id; ?>)">Zobraz text</button>
                         <div <?php echo "id=\"rec1-" . $id ."\""; ?> class="modal">
                             <div class="modal-content">
-                                <button onclick="hideRec1(<?php echo $id; ?>)">&times;</button>
+                                <button class="btn btn-success btn-sm" onclick="hideRec1(<?php echo $id; ?>)">zavřít</button>
                                 <p> <?php 
                                     // Tady vytvářím soupis spoluautorů
                                     echo "id článku= " . $id;
@@ -580,10 +561,10 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
             } else {
             ?>
                 <td>
-                    <button onclick="hideRec2(<?php echo $id; ?>)">Zobraz text</button>
+                    <button class="btn btn-outline-success btn-sm" onclick="hideRec2(<?php echo $id; ?>)">Zobraz text</button>
                     <div <?php echo "id=\"rec2-" . $id ."\""; ?> class="modal">
                         <div class="modal-content">
-                            <button onclick="hideRec2(<?php echo $id; ?>)">&times;</button>
+                            <button class="btn btn-success btn-sm" onclick="hideRec2(<?php echo $id; ?>)">zavřít</button>
                             <p> <?php 
                                 // Tady vytvářím soupis spoluautorů
                                 echo "id článku= " . $id;
@@ -636,6 +617,10 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
     ?>
     </table>
 
+    <br /><small>školní projekt do předmětu <a href="https://isz.vspj.cz/studijni-plany/detail-predmetu/plan/34/predmet/1609" target="_blank">Řízení softwarových projektů</a> @ <a href="http://www.vspj.cz/" target="_blank">vspj.cz</a> | podzim 2022</small>
+    <br /><br />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
