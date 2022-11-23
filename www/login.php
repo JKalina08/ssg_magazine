@@ -41,7 +41,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
                 $_SESSION['onlyMy'] = "0";
                 header("Location: home.php");
                 exit();
-
+                /* Kontrola prihlaseni*/
             }else{
                 header("Location: index.php?error=Nesprávné jméno nebo heslo");
                 exit();

@@ -2,6 +2,8 @@
 //echo $_POST['file'];
 if (isset($_POST['file'])) {
 
+//Ukazka souboru
+
 $file = "res/".$_POST['file'];
 //echo $file;
 if (file_exists($file) && is_readable($file) && preg_match('/\.pdf$/',$file)) {

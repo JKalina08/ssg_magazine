@@ -3,13 +3,27 @@ require 'protection.php';
 require("db_conn.php");
 ?>
 
-<HTML>
-<HEAD>
-<TITLE>Nový uživatel</TITLE>
-    <link rel="stylesheet" type="text/css" href="style-form.css">
-</HEAD>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SSG Magazín - Nový uživatel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
-<BODY>
+<body>
+
+    <?php
+    include 'zahlavi.php';
+    ?>
+
+    <div class="container-fluid">
+  
+    <h2 align="center">SSG Magazín</h2>
+    <hr><br />
+
 <div class="complet">
     <div class="form-wrapper">
         <H3>
@@ -37,14 +51,19 @@ mysqli_close($conn);
 ?>
 
 </h3>
-  <div class="form-guest">
+<br /><br />
+<div class="form-guest">
     <form action="home.php" method=get>
         <div class="button-panel">
-            <input type=submit class="button" value="Zpět na přehled">
-         </div>
-     </form>
-  </div>
-  </div>
+            <input type=submit class="btn btn-outline-success btn-sm" value="Zpět na přehled článků">
+        </div>
+    </form>
 </div>
-</BODY>
-</HTML>
+</div>
+
+    <br /><small>školní projekt do předmětu <a href="https://isz.vspj.cz/studijni-plany/detail-predmetu/plan/34/predmet/1609" target="_blank">Řízení softwarových projektů</a> @ <a href="http://www.vspj.cz/" target="_blank">vspj.cz</a> | podzim 2022</small>
+    <br /><br />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 require 'protection.php';
 require("db_conn.php");
 
+//verze B
 //echo $_POST[id_graveB];
 
 $allowedExts = array("doc", "docx", "pdf");
@@ -128,7 +129,6 @@ exit();
 <TITLE>Nový článek</TITLE>
     <link rel="stylesheet" type="text/css" href="style-form.css">
 </HEAD>
-
 
 
 
