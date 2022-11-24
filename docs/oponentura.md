@@ -8,7 +8,7 @@ _26. 11. 2022_
   * https://github.com/pmarek15/RSP_Ezoterici
   * https://alpha.kts.vspj.cz/~dostal39/rsp/
 
-     ![opWebUvodniStranka](../imgs/op_web01_guest_index.png)
+     ![opWebUvodniStranka](../imgs/oponentura_web01_guest_index.png)
 
         Přihlašovací údaje (username - heslo):
 
@@ -18,9 +18,9 @@ _26. 11. 2022_
 
         recenzentB - recenzent
 
-        sefredaktor - sefredaktor
-
         redaktor - redaktor
+
+        sefredaktor - sefredaktor
 
 # 2) Stručná charakteristika jeho implementační platformy
 
@@ -28,24 +28,75 @@ _26. 11. 2022_
 
 # 3) Co už je hotovo a jak to funguje
 
-  * přihlašování uživatelů :white_check_mark: - každý autor, recenzent, redaktor i člen redakční rady disponuje vlastním přihlašovacím profilem
+## Přihlašování uživatelů
+  * __přihlašování uživatelů__ :white_check_mark: - každý autor, recenzent, redaktor i člen redakční rady disponuje vlastním přihlašovacím profilem
 
+## Role Anonymní uživatel/návštěvník stránek
   * __role GUEST__ :white_check_mark: - zobrazení příspěvků anonymním uživatelům, návštěvníkům stránek
 
-      - problém :x: - Minulá vydání časopisu Zodiac - hned první odkaz na stažení nejnovějšího čísla je nefunkční
+      - problém - __Minulá vydání časopisu Zodiac__ :x: - hned první odkaz na stažení nejnovějšího čísla je nefunkční
 
-     ![opWebGuestClanky](../imgs/op_web02_guest_clanky.png)
+     ![opWebGuestClanky](../imgs/oponentura_web02_guest_clanky.png)
 
+## Role AUTOR
   * __role AUTOR__ :white_check_mark: - implementováno přidání nového příspěvku
 
-      - problém :x: - __Autor > Nový příspěvek__ - po přidání nového příspěvku přes formulář obdrží autor odezvu, že byl vložen, příspěvek jako takový se však autorovi nikde nezobrazí, nedohledá jaké příspěvky právě vložil, neví v jakém jsou stavu
+      - problém - __Autor > Nový příspěvek__ :x: - po přidání nového příspěvku přes formulář obdrží autor odezvu systému, že byl příspěvek vložen; příspěvek jako takový se však autorovi nikde nezobrazí, nedohledá jaké příspěvky právě vložil, neví v jakém jsou stavu, jak jsou ohodnocena jednotlivá hodnotící kriteria
 
-     ![opWebGuestClanky](../imgs/op_web03_autor_novy_clanek.png)
+     ![opWebAutorNovyClanek](../imgs/oponentura_web03_autor_novy_clanek.png)
 
-      - problém :x: - __Autor > Články__ - vylistuje nejnovější články v systému, nikoliv články autora
+      - problém - __Autor > Články__ :x: - vylistuje nejnovější články v systému, nikoliv články autora
 
-     ![opWebGuestClanky](../imgs/op_web03_autor_clanky.png)
+     ![opWebAutorClanky](../imgs/oponentura_web03_autor_clanky.png)
 
+## Role RECENZENT
+  * __role RECENZENT__ :interrobang: - není implementováno?
+  
+      - problém - __Recenzent > Články/Nejnovější články__ :interrobang: - pod tímto odkazem z hlavní nabídky mohou recenzneti k článku pouze vkládat komentáře, nikoli recenzovat dle zadání
+
+     ![opWebRecenzentClanky](../imgs/oponentura_web04_recenzent_clanky.png)
+
+     ![opWebRecenzentVybranyClanek](../imgs/oponentura_web04_recenzent_vybrany_clanek.png)
+
+
+## Role REDAKTOR
+  * __role REDAKTOR__ :interrobang: - není implementováno?
+  
+      - problém - __Redaktor > Články/Nejnovější články__ :interrobang: - podobně jako v případě role _recenzent_ - pod tímto odkazem z hlavní nabídky lze k článkům pouze vkládat komentáře
+
+     ![opWebRedaktorClanky](../imgs/oponentura_web05_redaktor_clanky.png)
+
+     ![opWebRedaktorClanky](../imgs/oponentura_web05_redaktor_vybrany_clanek.png)
+
+     - Role Redaktor - zobrazení neschváleného článku, filtrování řešeno pomocí štítků:
+
+     ![opWebRedaktorClanky](../imgs/oponentura_web05_redaktor_vybrany_clanek2a.png)
+
+     ![opWebRedaktorClanky](../imgs/oponentura_web05_redaktor_vybrany_clanek2b.png)
+
+
+## Role ŠÉFREDAKTOR
+  * __role ŠÉFREDAKTOR__ :interrobang: - není implementováno?
+  
+      - problém - __Šéfedaktor > Články/Nejnovější články__ :interrobang: - pod tímto odkazem z hlavní nabídky lze k článkům vkládat komentáře, nově přibyl odkaz na editaci
+
+     ![opWebSefredaktorClanky](../imgs/oponentura_web06_sefredaktor_clanky.png)
+
+      - Editace vybraného článku přes textový odkaz "Edit"
+
+     ![opWebSefredaktorVybranyClanek](../imgs/oponentura_web06_sefredaktor_vybrany_clanek.png)
+
+      - Editace vybraného článku - přesu do útrob WordPressu - user interface hell :fire:
+
+     ![opWebSefredaktorVybranyClanekEdit](../imgs/oponentura_web06_sefredaktor_vybrany_clanek_edit.png)
+
+
+
+..
+
+..
+
+..
 
 
 tohle barvičkový dole smazat...
@@ -80,6 +131,10 @@ _barvy?_
 # text in gray
 @@ text in purple (and bold)@@
 ```
+
+_emoji_
+
+https://gist.github.com/rxaviers/7360908
 
 # 4) Dílčí hodnocení v duchu hodnotícího formuláře
 
