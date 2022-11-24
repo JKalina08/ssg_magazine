@@ -5,15 +5,50 @@ _26. 11. 2022_
 # 1) Představení oponovaného produktu
 
   * Oponentem hodnocený tým: Ezoterici
-  * https://alpha.kts.vspj.cz/~dostal39/rsp/
   * https://github.com/pmarek15/RSP_Ezoterici
+  * https://alpha.kts.vspj.cz/~dostal39/rsp/
+
+     ![opWebUvodniStranka](../imgs/op_web01_guest_index.png)
+
+        Přihlašovací údaje (username - heslo):
+
+        autor - autor
+
+        recenzentA - recenzent
+
+        recenzentB - recenzent
+
+        sefredaktor - sefredaktor
+
+        redaktor - redaktor
 
 # 2) Stručná charakteristika jeho implementační platformy
 
-  * webová aplikace využívající WordPress - svobodný open source redakční publikační systém napsaný v PHP a MySQL a vyvíjený pod licencí GNU GPL
+  * webová aplikace využívající WordPress - svobodný open source redakční publikační systém napsaný v PHP a MySQL a vyvíjený pod licencí GNU GPL, grafická šablona Yuma Shark Themes, zásuvné moduly třetích stran
 
 # 3) Co už je hotovo a jak to funguje
 
+  * přihlašování uživatelů :white_check_mark: - každý autor, recenzent, redaktor i člen redakční rady disponuje vlastním přihlašovacím profilem
+
+  * __role GUEST__ :white_check_mark: - zobrazení příspěvků anonymním uživatelům, návštěvníkům stránek
+
+      - problém :x: - Minulá vydání časopisu Zodiac - hned první odkaz na stažení nejnovějšího čísla je nefunkční
+
+     ![opWebGuestClanky](../imgs/op_web02_guest_clanky.png)
+
+  * __role AUTOR__ :white_check_mark: - implementováno přidání nového příspěvku
+
+      - problém :x: - __Autor > Nový příspěvek__ - po přidání nového příspěvku přes formulář obdrží autor odezvu, že byl vložen, příspěvek jako takový se však autorovi nikde nezobrazí, nedohledá jaké příspěvky právě vložil, neví v jakém jsou stavu
+
+     ![opWebGuestClanky](../imgs/op_web03_autor_novy_clanek.png)
+
+      - problém :x: - __Autor > Články__ - vylistuje nejnovější články v systému, nikoliv články autora
+
+     ![opWebGuestClanky](../imgs/op_web03_autor_clanky.png)
+
+
+
+tohle barvičkový dole smazat...
 
 Done? | Name
 :---:| ---
