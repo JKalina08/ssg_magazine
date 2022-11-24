@@ -5,6 +5,7 @@ _26. 11. 2022_
 # 1) Představení oponovaného produktu
 
   * Oponentem hodnocený tým: Ezoterici
+  * https://alpha.kts.vspj.cz/~dostal39/rsp/
   * https://github.com/pmarek15/RSP_Ezoterici
 
 # 2) Stručná charakteristika jeho implementační platformy
