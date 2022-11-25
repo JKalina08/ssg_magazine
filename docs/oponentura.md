@@ -25,7 +25,7 @@ _26. 11. 2022_
 # 2) Stručná charakteristika jeho implementační platformy
 
   * webová aplikace využívající WordPress - svobodný open source redakční publikační systém napsaný v PHP a MySQL a vyvíjený pod licencí GNU GPL, grafická šablona Yuma Shark Themes, zásuvné moduly třetích stran
-  * WordPress je nechvalně známý především rekordním počtem bezpečnostních zranitelností a chyb. Statistiky CISA udávají, že v loňském roce (2021) vzrostl počet bezpečnostních chyb trojciferně
+  * WordPress a bezpečnostní zranitelnosti __POZOR!__
   https://www.itsec-nn.com/pocet-chyb-ve-wordpressu-vzrostl-v-roce-2021-trojciferne/
 
 # 3) Co už je hotovo a jak to funguje
@@ -36,7 +36,7 @@ _26. 11. 2022_
 ## Role Anonymní uživatel/návštěvník stránek
   * __role GUEST__ :white_check_mark: - zobrazení příspěvků anonymním uživatelům, návštěvníkům stránek
 
-      - problém - __Minulá vydání časopisu Zodiac__ :x: - hned první odkaz na stažení nejnovějšího čísla je nefunkční
+      - problém - __Minulá vydání časopisu Zodiac__ :x: -  odkaz na stažení nejnovějšího čísla je nefunkční
 
      ![opWebGuestClanky](../imgs/oponentura_web02_guest_clanky.png)
 
@@ -139,9 +139,8 @@ _pokud nejste schopni z předaných podkladů realizovat hodnocení, spojte se s
 ## 4b - Rozsah předané funkčnosti vzhledem k celkovému zadání
 
   * Hodnocení: 3
-  * Komentář: popravdě, čekali jsme víc, vzhledem k použitému "hotovému řešení" pomocí redakčního systému, což se však pro řešitelský tým pravděpodobně stalo v mnoha ohledech i hlavní slabinou pro řešení specifických požadvků dle zadání
-
-    - _není nám známo zda tým zůstal zachován v původní pětičlenné sestavě - v případě, že docházelo opakovaně k turbulencícm a fluktuaci členů týmu, tak je toto nutno v hodnocení dodatečně zohlednit_  
+  * Komentář: domníváme se, že použitím "hotového řešení" pomocí redakčního systému
+  se stalo i slabinou pro řešení specifických požadavků dle zadání.
 
 
 ## 4c - Uživatelská přívětivost hodnocené aplikace
@@ -155,7 +154,7 @@ _pokud nejste schopni z předaných podkladů realizovat hodnocení, spojte se s
   * Hodnocení: 2
   * Komentář: při testování se neprojevily vysloveně zjevné chyby, nedocházelo k pádům aplikace, ve výpisu generování článku se vždy na první pozici vyskytuje neplatný odkaz na stažení článku
 
-    - spíš než o chybu šlo v mnoha případech o "vlastnost" systému, kdy jsme postrádali očekávané funkcionality dle zadání, pokud byly implementovány, tak ne zcela vhodným způsobem, např. článek vydán/nevydán řešeno přes _štítky_, odkazy vedoucí dovnitř redakčního systému WordPress
+    - spíš než o chybu šlo v mnoha případech o "vlastnost" systému, kdy jsme postrádali očekávané funkcionality dle zadání, pokud byly implementovány, tak ne zcela vhodným způsobem (viz. 4b), např. článek vydán/nevydán řešeno přes _štítky_, odkazy vedoucí dovnitř redakčního systému WordPress
 
 
 ## 4e - Aktuální informační hodnota portálu
@@ -163,12 +162,12 @@ _pokud nejste schopni z předaných podkladů realizovat hodnocení, spojte se s
 _údaje o časopisu, redakční radě, způsobu publikování, obsahu časopisu apod._
 
   * Hodnocení: 3
-  * Komentář: vzhledem k "nehotovosti" projektu, obtížné hodnotit
+  * Komentář: bylo by vhodné ve zbývajícím čase doplnit.
 
 
 ## 4f - Subjektivně vnímaná kvalita (co se povedlo a co ještě potřebuje vylepšit)
   * Hodnocení: 3
-  * Komentář: subjektivně je to stále jen WordPress, redakční (blogovací) systém pro publikaci článku a zvolit/naprogramovat/nastavit vhodné zásuvné moduly pro naše potřeby přesně dle zadání je v daném kontextu pravděpodobně náročnější než vytvořit vlastní řešení _z čistě vody_, např. pomocí PHP, MySQL
+  * Komentář: je to WordPress, redakční (blogovací) systém pro publikaci článku a zvolit/naprogramovat/nastavit vhodné zásuvné moduly pro naše potřeby přesně dle zadání je v daném kontextu pravděpodobně náročnější než vytvořit vlastní řešení _z čistě vody_, např. pomocí PHP, MySQL
 
 
 ## 4g - Užitečnost uživatelské dokumentace
@@ -186,7 +185,13 @@ _údaje o časopisu, redakční radě, způsobu publikování, obsahu časopisu 
   * https://themeisle.com/blog/hide-wordpress-admin-bar/
 
 # 5) Celkové hodnocení (1-5)
-  * 3
+  * Komentář: Snažili jsme se býti kritičtí, tak, jak by asi byl zadavatel, 
+  který za produk platí, věříme, že si to u dálkových studentů můžeme dovolit. V rámci studia však víme, kolik času a úsilí tento projekt vyžaduje a kvalita požadovaná v
+  zadání se dle našeho názoru nemůže vejít do 70h Agile-vývoje na člověka +20h režie.
+
+  * Po zvážení výše uvedeného, udělujeme celkovou známku:  
+      > ## 2 :four_leaf_clover:
+
 
 # 6) Doporučení pro závěrečnou fázi vývoje
   * implementovat základní požadované MUST HAVE funkcionality 
