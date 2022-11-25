@@ -1,5 +1,5 @@
 ![](imgs/vspjLogo.png "VSPJ")
-# Řízení Sowtwarových Projektů - RSP
+# Řízení Softwarových Projektů - RSP
 
 **Team SSG**
 
