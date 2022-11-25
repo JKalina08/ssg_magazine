@@ -86,12 +86,34 @@ _26. 11. 2022_
 
      ![opWebSefredaktorVybranyClanek](../imgs/oponentura_web06_sefredaktor_vybrany_clanek.png)
 
-      - Editace vybraného článku - přesu do útrob WordPressu - user interface hell :fire:
+      - Editace vybraného článku - přesun do útrob WordPressu - user interface hell :fire:
 
      ![opWebSefredaktorVybranyClanekEdit](../imgs/oponentura_web06_sefredaktor_vybrany_clanek_edit.png)
 
+## Uživatelské rozhraní
+  * defaultní __WordPress lišta__ (_WordPress Admin Bar_) v záhlaví stránky zcela rozbíjí uživatelské rozhraní a velmi snadno nasměruje uživatele do míst kam by neměl mít přístup a odkud nevede jednoduše zpětný odkaz na stránky recenzního časopisu
 
+     ![opWebWPlista](../imgs/oponentura_worpress_lista.png)
 
+     ![opWebWPlista2](../imgs/oponentura_worpress_lista2.png)
+
+      - vytvořit nový WordPress příspěvek
+
+     ![opWebWPlistaVytvoritPrispevek](../imgs/oponentura_worpress_lista2a_vytvorit_prispevek.png)
+
+      - nahrát do uložiště WordPressu multimediální soubor
+
+     ![opWebWPlistaNahratSoubor](../imgs/oponentura_worpress_lista2b_nahrat_soubor.png)
+
+      - vytvořit novou WordPress stránku
+
+     ![opWebWPlistaVytvoritStranku](../imgs/oponentura_worpress_lista2c_vytvorit_stranku.png)
+
+      - upravit příspěvek - úprava úvodní stránky projektu
+
+     ![opWebWPlistaEditaceWPstranek](../imgs/oponentura_worpress_lista2d_editace.png)
+
+      - a jiné části redakčního systému, které by přístupné být neměly
 ..
 
 ..
@@ -196,7 +218,10 @@ _údaje o časopisu, redakční radě, způsobu publikování, obsahu časopisu 
 
 
 ## 4i - Další doporučení hodnocenému týmu:
-  * ...
+  * doporučejeme v nastavení redakčního systému skrýt všem uživatelům WordPress lištu (WordPress Admin Bar)
+  * https://themeisle.com/blog/hide-wordpress-admin-bar/
+
+
 
 # 5) Celkové hodnocení (1-5)
   * ...
