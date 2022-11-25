@@ -19,6 +19,8 @@ odborného a vědeckého časopisu
 - [Výstup retrospektivy ze ScrumDesku - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md)
 
 - [Ostatní dokumentace k projektu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/)
+    - [Oponentura k projektu týmu Ezoterici](https://github.com/JKalina08/ssg_magazine/blob/main/docs/oponentura.md)
+
 
 ## Struktura projektu: 
 ```bash 
