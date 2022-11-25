@@ -188,7 +188,9 @@ _údaje o časopisu, redakční radě, způsobu publikování, obsahu časopisu 
   * 3
 
 # 6) Doporučení pro závěrečnou fázi vývoje
-  * doimplementovat základní požadované MUST HAVE funkcionality 
+  * implementovat základní požadované MUST HAVE funkcionality 
 
 # 7) Případné dotazy na členy hodnoceného týmu
-  * pokud byste stáli znovu před výběrem vhodného řešení/nástrojeů pro realizaci projektu, vybrali byste si znovu redakční systém WordPress? Proč ano/proč ne? Případně jakou byste zvolili alternatiu 
+  * pokud byste stáli znovu před výběrem vhodného řešení/nástrojů pro realizaci projektu, vybrali byste si znovu redakční systém WordPress?
+
+    - Proč ano/ne? Případně jakou byste zvolili alternativu. 
