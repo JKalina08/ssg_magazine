@@ -187,9 +187,8 @@ _údaje o časopisu, redakční radě, způsobu publikování, obsahu časopisu 
 
 ## 5) Celkové hodnocení (1-5)
   * Komentář: Snažili jsme se býti kritičtí, tak, jak by asi byl zadavatel, 
-  který za produk platí, věříme, že si to u dálkových studentů můžeme dovolit. V rámci studia však víme, kolik času a úsilí tento projekt vyžaduje a kvalita požadovaná v
-  zadání se dle našeho názoru nemůže vejít do 70h Agile-vývoje na člověka +20h režie.
-
+  který za produk platí, věříme, že si to u dálkových studentů můžeme dovolit. V rámci studia však víme, kolik času a úsilí tento projekt vyžaduje. 
+  
   * Po zvážení výše uvedeného, udělujeme celkovou známku:  
       > ## 2 :four_leaf_clover:
 
