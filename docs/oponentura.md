@@ -25,6 +25,8 @@ _26. 11. 2022_
 # 2) Stručná charakteristika jeho implementační platformy
 
   * webová aplikace využívající WordPress - svobodný open source redakční publikační systém napsaný v PHP a MySQL a vyvíjený pod licencí GNU GPL, grafická šablona Yuma Shark Themes, zásuvné moduly třetích stran
+  * WordPress je nechvalně známý především rekordním počtem bezpečnostních zranitelností a chyb. Statistiky CISA udávají, že v loňském roce (2021) vzrostl počet bezpečnostních chyb trojciferně
+  https://www.itsec-nn.com/pocet-chyb-ve-wordpressu-vzrostl-v-roce-2021-trojciferne/
 
 # 3) Co už je hotovo a jak to funguje
 
