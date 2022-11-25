@@ -43,7 +43,8 @@ _26. 11. 2022_
 ## Role AUTOR
   * __role AUTOR__ :white_check_mark: - implementováno přidání nového příspěvku
 
-      - problém - __Autor > Nový příspěvek__ :x: - po přidání nového příspěvku přes formulář obdrží autor odezvu systému, že byl příspěvek vložen; příspěvek jako takový se však autorovi nikde nezobrazí, nedohledá jaké příspěvky právě vložil, neví v jakém jsou stavu, jak jsou ohodnocena jednotlivá hodnotící kriteria
+      - problém - __Autor > Nový příspěvek__ :x: - po přidání nového příspěvku přes formulář obdrží autor odezvu systému, že byl příspěvek vložen; příspěvek jako takový se však autorovi nikde nezobrazí, nedohledá jaké příspěvky právě vložil, neví v jakém jsou stavu, jak jsou ohodnocena jednotlivá hodnotící kriteria  
+      - proč je k autorovi potřeba jeho telefonní číslo? :x:
 
      ![opWebAutorNovyClanek](../imgs/oponentura_web03_autor_novy_clanek.png)
 
@@ -52,7 +53,7 @@ _26. 11. 2022_
      ![opWebAutorClanky](../imgs/oponentura_web03_autor_clanky.png)
 
 ## Role RECENZENT
-  * __role RECENZENT__ :interrobang: - není implementováno?
+  * __role RECENZENT__ :interrobang: - není plnohodnotně implementováno?
   
       - problém - __Recenzent > Články/Nejnovější články__ :interrobang: - pod tímto odkazem z hlavní nabídky mohou recenzneti k článku pouze vkládat komentáře, nikoli recenzovat dle zadání
 
@@ -62,7 +63,7 @@ _26. 11. 2022_
 
 
 ## Role REDAKTOR
-  * __role REDAKTOR__ :interrobang: - není implementováno?
+  * __role REDAKTOR__ :interrobang: - není plnohodnotně implementováno?
   
       - problém - __Redaktor > Články/Nejnovější články__ :interrobang: - podobně jako v případě role _recenzent_ - pod tímto odkazem z hlavní nabídky lze k článkům pouze vkládat komentáře
 
@@ -78,7 +79,7 @@ _26. 11. 2022_
 
 
 ## Role ŠÉFREDAKTOR
-  * __role ŠÉFREDAKTOR__ :interrobang: - není implementováno?
+  * __role ŠÉFREDAKTOR__ :interrobang: - není plnohodnotně implementováno?
   
       - problém - __Šéfedaktor > Články/Nejnovější články__ :interrobang: - pod tímto odkazem z hlavní nabídky lze k článkům vkládat komentáře, nově přibyl odkaz na editaci
 
@@ -115,50 +116,7 @@ _26. 11. 2022_
 
      ![opWebWPlistaEditaceWPstranek](../imgs/oponentura_worpress_lista2d_editace.png)
 
-      - a jiné části redakčního systému, které by přístupné být neměly
-..
-
-..
-
-..
-
-
-tohle barvičkový dole smazat...
-
-Done? | Name
-:---:| ---
-:white_check_mark: | Každý autor, recenzent, redaktor i člen redakční rady musí mít vlastní bezpečný přihlašovací profil, který může editovat. :heavy_check_mark: **SPLNĚNO BEZ VÝHRAD** :heavy_check_mark:
-:white_check_mark: | funkcionalita 1 :heavy_check_mark: **SPLNĚNO BEZ VÝHRAD** 
-:ballot_box_with_check: | funkcionalita 2 :ballot_box_with_check: **SPLNĚNO S VÝHRADAMI** :heavy_check_mark:
-:white_large_square:| funkcionalita 3 :heavy_exclamation_mark: **NEFUNKČNÍ ŘEŠENÍ** :heavy_exclamation_mark: 
-:white_large_square:| funkcionalita 4 :x: **NEIMPLEMENTOVÁNO** :x:
-:white_large_square:| funkcionalita 5 :interrobang: **NEZNÁMÝ STAV** :interrobang:
-:white_check_mark:| DDD
-:ballot_box_with_check: | EEE
-:interrobang: | FFF
-:x: | GGG
-:heavy_exclamation_mark: | HHH
-:bangbang: | III
-:heavy_multiplication_x: | JJJ
-:heavy_plus_sign: | KKK
-:heavy_minus_sign: | LLL
-:clock9: | MMM
-:clock930: | NNN
-
-
-_barvy?_
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-
-_emoji_
-
-https://gist.github.com/rxaviers/7360908
+      - a jiné části redakčního systému, které by uživatelům vůbec neměly být přístupné
 
 # 4) Dílčí hodnocení v duchu hodnotícího formuláře
 
@@ -174,62 +132,66 @@ _xRSP, formulář pro hodnotitele_
 ## 4a - Úplnost podkladů, předaných oponovaným týmem
 _pokud nejste schopni z předaných podkladů realizovat hodnocení, spojte se se zástupcem hodnoceného týmu a obratem s ním tuto situaci vyřešte_
 
-  * Hodnocení:
-  * Komentář:
+  * Hodnocení: 2
+  * Komentář: nebyla dodána dokumentace k backendové části, u zvoleného řešení prostřednictvím redakčního systému by bylo vhodné uvést zejména jaké zásuvné moduly byly použity, verze všech komponent, zda (jaké) komponenty byly doprogramovány 
 
 
 ## 4b - Rozsah předané funkčnosti vzhledem k celkovému zadání
 
-  * Hodnocení:
-  * Komentář:
+  * Hodnocení: 3
+  * Komentář: popravdě, čekali jsme víc, vzhledem k použitému "hotovému řešení" pomocí redakčního systému, což se však pro řešitelský tým pravděpodobně stalo v mnoha ohledech i hlavní slabinou pro řešení specifických požadvků dle zadání
+
+    - _není nám známo zda tým zůstal zachován v původní pětičlenné sestavě - v případě, že docházelo opakovaně k turbulencícm a fluktuaci členů týmu, tak je toto nutno v hodnocení dodatečně zohlednit_  
 
 
 ## 4c - Uživatelská přívětivost hodnocené aplikace
 
-  * Hodnocení:
-  * Komentář:
+  * Hodnocení: 2
+  * Komentář: doporučujeme skrýt WordPress Admin Bar, poté možno ohodnotit známkou 1
 
 
 ## 4d - Chyby, zaznamenané při testování
 
-  * Hodnocení:
-  * Komentář:
+  * Hodnocení: 2
+  * Komentář: při testování se neprojevily vysloveně zjevné chyby, nedocházelo k pádům aplikace, ve výpisu generování článku se vždy na první pozici vyskytuje neplatný odkaz na stažení článku
+
+    - spíš než o chybu šlo v mnoha případech o "vlastnost" systému, kdy jsme postrádali očekávané funkcionality dle zadání, pokud byly implementovány, tak ne zcela vhodným způsobem, např. článek vydán/nevydán řešeno přes _štítky_, odkazy vedoucí dovnitř redakčního systému WordPress
 
 
 ## 4e - Aktuální informační hodnota portálu
 
 _údaje o časopisu, redakční radě, způsobu publikování, obsahu časopisu apod._
 
-  * Hodnocení:
-  * Komentář:
+  * Hodnocení: 3
+  * Komentář: vzhledem k "nehotovosti" projektu, obtížné hodnotit
 
 
 ## 4f - Subjektivně vnímaná kvalita (co se povedlo a co ještě potřebuje vylepšit)
-  * Hodnocení:
-  * Komentář:
+  * Hodnocení: 3
+  * Komentář: subjektivně je to stále jen WordPress, redakční (blogovací) systém pro publikaci článku a zvolit/naprogramovat/nastavit vhodné zásuvné moduly pro naše potřeby přesně dle zadání je v daném kontextu pravděpodobně náročnější než vytvořit vlastní řešení _z čistě vody_, např. pomocí PHP, MySQL
 
 
 ## 4g - Užitečnost uživatelské dokumentace
-  * Hodnocení:
-  * Komentář:
+  * Hodnocení: 1
+  * Komentář: vzhledem k rozsahu funkcionalit bez výhrad
 
 
 ## 4h - Užitečnost administrátorské dokumentace
-  * Hodnocení:
-  * Komentář:
+  * Hodnocení: -
+  * Komentář: viz 4a - nebyla dodána dokumentace k backendové části, u zvoleného řešení prostřednictvím redakčního systému by bylo vhodné uvést zejména jaké zásuvné moduly byly použity, verze všech komponent, zda (jaké) komponenty byly doprogramovány
 
 
 ## 4i - Další doporučení hodnocenému týmu:
   * doporučejeme v nastavení redakčního systému skrýt všem uživatelům WordPress lištu (WordPress Admin Bar)
   * https://themeisle.com/blog/hide-wordpress-admin-bar/
 
-
-
 # 5) Celkové hodnocení (1-5)
-  * ...
+  * 3
 
 # 6) Doporučení pro závěrečnou fázi vývoje
-  * ...
+  * implementovat základní požadované MUST HAVE funkcionality 
 
 # 7) Případné dotazy na členy hodnoceného týmu
-  * ...
+  * pokud byste stáli znovu před výběrem vhodného řešení/nástrojů pro realizaci projektu, vybrali byste si znovu redakční systém WordPress?
+
+    - Proč ano/ne? Případně jakou byste zvolili alternativu. 
