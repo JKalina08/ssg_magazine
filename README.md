@@ -7,8 +7,18 @@ Aplikace pro prohlížení, sběr příspěvků a administraci recenzního říz
 odborného a vědeckého časopisu
 
 - [Odkaz na funkční aplikaci](https://alpha.kts.vspj.cz/~karmasin/SSG/info.html) :mushroom:
-- [Dokumentace backend](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :bookmark_tabs:
 - [Prezentace 1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md) :ledger:
+
+- [Lean canvas / obchodní model](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_lean_canvas.png)
+- [Definiton of ready, definition of done, příprava projektu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md)
+
+- [Dokumentace backend](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :bookmark_tabs:
+- [Uživatelská dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :bookmark_tabs:
+
+- [Výstup retrospektivy ze ScrumDesku - Sprint1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md)
+- [Výstup retrospektivy ze ScrumDesku - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md)
+
+- [Ostatní dokumentace k projektu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/)
 
 ## Struktura projektu: 
 ```bash 
