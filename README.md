@@ -6,20 +6,33 @@
 Aplikace pro prohlížení, sběr příspěvků a administraci recenzního řízení
 odborného a vědeckého časopisu
 
-- [Odkaz na funkční aplikaci](https://alpha.kts.vspj.cz/~karmasin/SSG/info.html) :mushroom:
-- [Prezentace 1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md) :ledger:
+### Roadmap:
+- (1) Název týmu, jeho složení a členské role :calendar: do <span style="color:green">2.10.</span> :white_check_mark:
+- (2) Pozvání vyučujícího do týmového úložiště (GitHub) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
+- (3) [Business Model Canvas/Lean Canvas](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_lean_canvas.png) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
 
-- [Lean canvas / obchodní model](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_lean_canvas.png)
-- [Definiton of ready, definition of done, příprava projektu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md)
+- (4) [Seznam Definition of Ready (DoR)](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
 
-- [Dokumentace backend](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :bookmark_tabs:
-- [Uživatelská dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :bookmark_tabs:
+- (5) [Seznam Definition of Done (DoD)](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
+- (6) Nejpozdější závazný termín zahájení prvního sprintu :calendar: do <span style="color:green">17.10.</span> :white_check_mark:
+- (7) [Datový nebo objektový model navrhovaného řešení ](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+- (8) [Prototypový model uživatelského rozhraní](httpthub.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+- (9) [Prezentace iterace 1 vlastního týmu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+- (10) [Minimální verze uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
+- (11) [Minimální verze administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
+- (12) [Odkaz na funkční aplikaci](https://alpha.kts.vspj.cz/~karmasin/SSG/info.html) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
+- (13) [Oponentura k projektu týmu Ezoterici](https://github.com/JKalina08/ssg_magazine/blob/main/docs/oponentura.md) :calendar: do <span style="color:green">28.11.</span> :white_check_mark:
+- (14) Kompletní produktová dokumentace :calendar: do <span style="color:red">23.12.</span> :fire:
+  - [uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :fire: TODO
+  - [dministrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :fire: TODO
+- (15) Strukturované zhodnocení práce týmu :calendar: do <span style="color:red">23.12.</span> :fire:
+  - [Self Assesment]() :fire:TODO
+    - [Retrospektiva - Sprint1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
+    - [Retrospektiva - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
+    - [Retrospektiva - Sprint2](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint2.md) :fire: TODO
+    - [Retrospektiva - Sprint3](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint3.md) :fire: TODO
+    - [Retrospektiva - Sprint4](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint4.md) :fire: TODO
 
-- [Výstup retrospektivy ze ScrumDesku - Sprint1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md)
-- [Výstup retrospektivy ze ScrumDesku - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md)
-
-- [Ostatní dokumentace k projektu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/)
-    - [Oponentura k projektu týmu Ezoterici](https://github.com/JKalina08/ssg_magazine/blob/main/docs/oponentura.md)
 
 
 ## Struktura projektu: 
