@@ -14,5 +14,5 @@
   * je zřejmé, že díky ztrátě člena týmu nedokončíme všechna US (aktuálně rozplánované do Sprit4b) - soustředíme se hlavně na __must-have__.
 
 ### Co chcete vylepšit
-  * (Scrum Master:) podařilo se nám ve Scrum Desku nalézt __Retrospective Board__, nástroj pro vykazování retrospektivy, bylo by vhodné aby tento nástroj používali všichni členové týmu již v průběhu sprintu, kdy narazí na nějaký problém
+  * (Scrum Master:) podařilo se nám ve Scrum Desku nalézt __Retrospective Board__, nástroj pro vykazování retrospektivy, bylo by vhodné aby tento nástroj používali na konci sprintu všichni členové týmu
   * počínaje tímto sprintem budeme zveřejňovat retrospektivu vždy před vlastním ukončením sprintu (ve ScrumDesku i na Githubu)
