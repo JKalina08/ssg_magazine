@@ -24,12 +24,12 @@ odborného a vědeckého časopisu
 - (13) [Oponentura k projektu týmu Ezoterici](https://github.com/JKalina08/ssg_magazine/blob/main/docs/oponentura.md) :calendar: do <span style="color:green">28.11.</span> :white_check_mark:
 - (14) Kompletní produktová dokumentace :calendar: do <span style="color:red">23.12.</span> :fire:
   - [uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :fire: TODO
-  - [dministrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :fire: TODO
+  - [administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :fire: TODO
 - (15) Strukturované zhodnocení práce týmu :calendar: do <span style="color:red">23.12.</span> :fire:
   - [Self Assesment]() :fire:TODO
     - [Retrospektiva - Sprint1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
     - [Retrospektiva - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
-    - [Retrospektiva - Sprint2](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint2.md) :fire: TODO
+    - [Retrospektiva - Sprint2](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint2.md) :white_check_mark:
     - [Retrospektiva - Sprint3](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint3.md) :fire: TODO
     - [Retrospektiva - Sprint4](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint4.md) :fire: TODO
 
@@ -55,7 +55,7 @@ odborného a vědeckého časopisu
   ## Instalace a zprovoznění
 * Předpokladem je OS Windows 10 nebo 11. 
 * Zprovozněný GIT - buď ve WSL2 nebo jako [GitBash](https://git-scm.com/download/win)-> aplikace pro Windows. 
-  * Nastavení gitu (Bu+d ve WSL Bashi nebo Windows aplikace Git Bash)
+  * Nastavení gitu (buď ve WSL Bashi nebo Windows aplikace Git Bash)
     * `git config --global user.name "tvojeGitHubJmeno"`
     * `git config --global user.email "tvujEmail@domena.cz"`
     * `git config --global init.defaultBranch main`
@@ -138,7 +138,7 @@ dostane nejvýše jednou.
   * Administrativně zajištuje veškeré problematické situace mezi autory a oponenty.
   * Předává zdrojové texty časopisu nakladatelství.  
 
-# Recenzent:
+### Recenzent:
 
 * Recenzent po přihlášení prostuduje redaktorem předělený příspěvek, vyplní a odešle recenzní
 formulář, obsahující kromě identifikátorů autora a článku následující kategoriální údaje:
@@ -150,22 +150,22 @@ formulář, obsahující kromě identifikátorů autora a článku následujíc�
 ve stupnici 1 (nejlepší) až 5 (nejhorší). Kromě toho musí recenzní formulář obsahovat textové
 pole na otevřenou odpověď a datum recenze.  
 
-# Šéfredaktor:
+### Šéfredaktor:
 
 * Šéfredaktor po přihlášení vidí veškerou agendu autora, redaktora i recenzentů. Změny v ní ale
 samostatně provádět nesmí. Má ale možnost je písemně formulovat, například formou jmenných
 úkolů a vyžadovat jejich plnění k danému termínu.   
 
-# Čtenář:
+### Čtenář:
 
 * Čtenář se nemusí přihlašovat a vidí pouze veřejně dostupné informace.  
 
-# Administrátor:
+### Administrátor:
 
 * Administrátor po přihlášení může kompletně spravovat celou aplikaci. Bylo by vhodné, aby měl
 za tím účelem vlastní rozhraní.  
 
-# Další požadavky:
+### Další požadavky:
 
 * a) Kromě popsaných funkčností by bylo vhodné, aby kromě přidávání, mazání a prohlížení bylo
 možné jednotlivé záznamy také řadit, filtrovat, vyhledávat a počítat jejich souhrny.  
