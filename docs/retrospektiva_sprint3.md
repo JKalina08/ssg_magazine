@@ -1,4 +1,4 @@
-## __Sprint 2 - Retrospektiva:__
+## __Sprint 3 - Retrospektiva:__
 
 ( _písemný výstup retrospektivy vedené ve ScrumDesku_ )
 
