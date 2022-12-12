@@ -15,8 +15,10 @@ odborného a vědeckého časopisu
 
 - (5) [Seznam Definition of Done (DoD)](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
 - (6) Nejpozdější závazný termín zahájení prvního sprintu :calendar: do <span style="color:green">17.10.</span> :white_check_mark:
-- (7) [Datový nebo objektový model navrhovaného řešení ](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
-- (8) [Prototypový model uživatelského rozhraní](httpthub.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+- (7) Datový nebo objektový model navrhovaného řešení
+  - [Datový model navrhovaného řešení ](https://github.com/JKalina08/ssg_magazine/tree/main/imgs/PrvniErModel.png) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+  - [Objektový model navrhovaného řešení ](https://github.com/JKalina08/ssg_magazine/tree/main/imgs/ObjektovyModel.png) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+- (8) [Prototypový model uživatelského rozhraní](https://github.com/JKalina08/ssg_magazine/tree/main/imgs/UI.jpg) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
 - (9) [Prezentace iterace 1 vlastního týmu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
 - (10) [Minimální verze uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
 - (11) [Minimální verze administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
