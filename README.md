@@ -24,16 +24,16 @@ odborného a vědeckého časopisu
 - (11) [Minimální verze administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
 - (12) [Odkaz na funkční aplikaci](https://alpha.kts.vspj.cz/~karmasin/SSG/info.html) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
 - (13) [Oponentura k projektu týmu Ezoterici](https://github.com/JKalina08/ssg_magazine/blob/main/docs/oponentura.md) :calendar: do <span style="color:green">28.11.</span> :white_check_mark:
-- (14) Kompletní produktová dokumentace :calendar: do <span style="color:red">23.12.</span> :fire:
-  - [uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :fire: TODO
-  - [administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :fire: TODO
-- (15) Strukturované zhodnocení práce týmu :calendar: do <span style="color:red">23.12.</span> :fire:
+- (14) Kompletní produktová dokumentace :calendar: do <span style="color:red">23.12.</span> :white_check_mark:
+  - [uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/uzivatelska_dokumentace.md) :white_check_mark:
+  - [administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :white_check_mark:
+- (15) Strukturované zhodnocení práce týmu :calendar: do <span style="color:red">23.12.</span> :white_check_mark:
   - [Self Assesment]() :fire:TODO
     - [Retrospektiva - Sprint1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
     - [Retrospektiva - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
     - [Retrospektiva - Sprint2](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint2.md) :white_check_mark:
     - [Retrospektiva - Sprint3](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint3.md) :white_check_mark:
-    - [Retrospektiva - Sprint4](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint4.md) :fire: TODO
+    - [Retrospektiva - Sprint4](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint4.md) :white_check_mark:
 
 
 

@@ -3,7 +3,7 @@
 (1.a) Index.php  
 * první zobrazená webová stránka. Obsahuje logo projektu a formulář k přihlášení. Čtenář bez přihlašovacích údajů může vstoupit na stránky jako návštěvník pouze k čtení článků.
 * Zde se vyplňuje formulář prihlašovacími údaji, který se metodou POST posílá do login.php
-*  __TODO: povinná lištza s infem o tom, že se jedná pouze o školní projekt__
+*  povinná lišta s infem o tom, že se jedná pouze o školní projekt
 
 (1.b) login.php
 * BE script pro komunikaci s datábází metodou POST získává údaje z formuláře, vytváří SQL dotaz a zpracovává jeho výsledek
@@ -53,10 +53,5 @@
 (2.d) showFile.php
 * zobrazuje požadovaný dokument z filesystemu serveru v novém tabu prohlížeče
   
-- - -
-### TODO:
-* newReview_a
-* newReview_b
-* showReview
-* ...
+
 
