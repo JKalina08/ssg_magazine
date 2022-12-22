@@ -205,7 +205,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                         <button class="btn btn-success btn-sm" onclick="hideInfo(<?php echo $id; ?>)">zavřít</button>
                         <p> <?php 
                         // Tady vytvářím soupis spoluautorů
-                            echo "id článku= " . $id;
+                           
                             echo "<h1>Spoluautoři:</h1>";
                             echo "<br>";
 
@@ -254,7 +254,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                             <div class="modal-content">
                                 <button class="btn btn-success btn-sm" onclick="hideRec1(<?php echo $id; ?>)">zavřít</button>
                                 <p>
-                                    (debugg:) id článku= <?php echo $id; ?>
+                                    
                                     <h1>Recenze:</h1>
                                     <br>
                                     <form action="recenze_b.php" method=post id="textrec1_form">
@@ -278,7 +278,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                                 <button class="btn btn-success btn-sm" onclick="hideRec1(<?php echo $id; ?>)">zavřít</button>
                                 <p> <?php 
                                     // Tady vypisu text recenze
-                                    echo "(debugg:) id článku= " . $id;
+                                    
                                     echo "<h1>Recenze:</h1>";
                                     echo "<br>";
                                     echo $article['recenze1'];                  
@@ -303,7 +303,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                         <div class="modal-content">
                             <button class="btn btn-success btn-sm" onclick="hideRec2(<?php echo $id; ?>)">zavřít</button>
                             <p>
-                                (debugg:) id článku= <?php echo $id; ?>
+                                
                                 <h1>Recenze:</h1>
                                 <br>
                                 <form action="recenze_b.php" method=post id="textrec2_form">
@@ -327,7 +327,7 @@ $titleName = $_SESSION['name'] . " - " . $role . " - id:" . $_SESSION['id']; // 
                             <button class="btn btn-success btn-sm" onclick="hideRec2(<?php echo $id; ?>)">zavřít</button>
                             <p> <?php 
                                 // Tady vypisu text recenze
-                                echo "(debugg:) id článku= " . $id;
+                                
                                 echo "<h1>Recenze:</h1>";
                                 echo "<br>";
                                 echo $article['recenze2'];                  
