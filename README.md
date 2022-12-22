@@ -28,7 +28,6 @@ odborného a vědeckého časopisu
   - [uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/uzivatelska_dokumentace.md) :white_check_mark:
   - [administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :white_check_mark:
 - (15) [Strukturované zhodnocení práce týmu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Strukt_hodnoceni_tymu.md) :white_check_mark:
-  - [Self Assesment]() :fire:TODO
     - [Retrospektiva - Sprint1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
     - [Retrospektiva - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
     - [Retrospektiva - Sprint2](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint2.md) :white_check_mark:
