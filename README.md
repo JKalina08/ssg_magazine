@@ -6,20 +6,35 @@
 Aplikace pro prohlížení, sběr příspěvků a administraci recenzního řízení
 odborného a vědeckého časopisu
 
-- [Odkaz na funkční aplikaci](https://alpha.kts.vspj.cz/~karmasin/SSG/info.html) :mushroom:
-- [Prezentace 1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md) :ledger:
+### Roadmap:
+- (1) Název týmu, jeho složení a členské role :calendar: do <span style="color:green">2.10.</span> :white_check_mark:
+- (2) Pozvání vyučujícího do týmového úložiště (GitHub) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
+- (3) [Business Model Canvas/Lean Canvas](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_lean_canvas.png) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
 
-- [Lean canvas / obchodní model](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_lean_canvas.png)
-- [Definiton of ready, definition of done, příprava projektu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md)
+- (4) [Seznam Definition of Ready (DoR)](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
 
-- [Dokumentace backend](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :bookmark_tabs:
-- [Uživatelská dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :bookmark_tabs:
+- (5) [Seznam Definition of Done (DoD)](https://github.com/JKalina08/ssg_magazine/blob/main/docs/ssg_priprava_dor_dod.md) :calendar: do <span style="color:green">16.10.</span> :white_check_mark:
+- (6) Nejpozdější závazný termín zahájení prvního sprintu :calendar: do <span style="color:green">17.10.</span> :white_check_mark:
+- (7) Datový nebo objektový model navrhovaného řešení
+  - [Datový model navrhovaného řešení ](https://github.com/JKalina08/ssg_magazine/tree/main/imgs/PrvniErModel.png) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+  - [Objektový model navrhovaného řešení ](https://github.com/JKalina08/ssg_magazine/tree/main/imgs/ObjektovyModel.png) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+- (8) [Prototypový model uživatelského rozhraní](https://github.com/JKalina08/ssg_magazine/tree/main/imgs/UI.jpg) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+- (9) [Prezentace iterace 1 vlastního týmu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/prezentace_1.md) :calendar: do <span style="color:green">10.11.</span> :white_check_mark:
+- (10) [Minimální verze uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/u%C5%BEivatelsk%C3%A1_dokumentace.md) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
+- (11) [Minimální verze administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
+- (12) [Odkaz na funkční aplikaci](https://alpha.kts.vspj.cz/~karmasin/SSG/info.html) :calendar: do <span style="color:green">20.11.</span> :white_check_mark:
+- (13) [Oponentura k projektu týmu Ezoterici](https://github.com/JKalina08/ssg_magazine/blob/main/docs/oponentura.md) :calendar: do <span style="color:green">28.11.</span> :white_check_mark:
+- (14) Kompletní produktová dokumentace :calendar: do <span style="color:red">23.12.</span> :white_check_mark:
+  - [uživatelské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/uzivatelska_dokumentace.md) :white_check_mark:
+  - [administrátorské dokumentace](https://github.com/JKalina08/ssg_magazine/blob/main/docs/Dokumentace-backend.md) :white_check_mark:
+- (15) Strukturované zhodnocení práce týmu :calendar: do <span style="color:red">23.12.</span> :white_check_mark:
+  - [Self Assesment]() :fire:TODO
+    - [Retrospektiva - Sprint1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
+    - [Retrospektiva - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md) :white_check_mark:
+    - [Retrospektiva - Sprint2](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint2.md) :white_check_mark:
+    - [Retrospektiva - Sprint3](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint3.md) :white_check_mark:
+    - [Retrospektiva - Sprint4](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint4.md) :white_check_mark:
 
-- [Výstup retrospektivy ze ScrumDesku - Sprint1](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md)
-- [Výstup retrospektivy ze ScrumDesku - Sprint1b](https://github.com/JKalina08/ssg_magazine/blob/main/docs/retrospektiva_sprint1.md)
-
-- [Ostatní dokumentace k projektu](https://github.com/JKalina08/ssg_magazine/blob/main/docs/)
-    - [Oponentura k projektu týmu Ezoterici](https://github.com/JKalina08/ssg_magazine/blob/main/docs/oponentura.md)
 
 
 ## Struktura projektu: 
@@ -42,7 +57,7 @@ odborného a vědeckého časopisu
   ## Instalace a zprovoznění
 * Předpokladem je OS Windows 10 nebo 11. 
 * Zprovozněný GIT - buď ve WSL2 nebo jako [GitBash](https://git-scm.com/download/win)-> aplikace pro Windows. 
-  * Nastavení gitu (Bu+d ve WSL Bashi nebo Windows aplikace Git Bash)
+  * Nastavení gitu (buď ve WSL Bashi nebo Windows aplikace Git Bash)
     * `git config --global user.name "tvojeGitHubJmeno"`
     * `git config --global user.email "tvujEmail@domena.cz"`
     * `git config --global init.defaultBranch main`
@@ -125,7 +140,7 @@ dostane nejvýše jednou.
   * Administrativně zajištuje veškeré problematické situace mezi autory a oponenty.
   * Předává zdrojové texty časopisu nakladatelství.  
 
-# Recenzent:
+### Recenzent:
 
 * Recenzent po přihlášení prostuduje redaktorem předělený příspěvek, vyplní a odešle recenzní
 formulář, obsahující kromě identifikátorů autora a článku následující kategoriální údaje:
@@ -137,22 +152,22 @@ formulář, obsahující kromě identifikátorů autora a článku následujíc�
 ve stupnici 1 (nejlepší) až 5 (nejhorší). Kromě toho musí recenzní formulář obsahovat textové
 pole na otevřenou odpověď a datum recenze.  
 
-# Šéfredaktor:
+### Šéfredaktor:
 
 * Šéfredaktor po přihlášení vidí veškerou agendu autora, redaktora i recenzentů. Změny v ní ale
 samostatně provádět nesmí. Má ale možnost je písemně formulovat, například formou jmenných
 úkolů a vyžadovat jejich plnění k danému termínu.   
 
-# Čtenář:
+### Čtenář:
 
 * Čtenář se nemusí přihlašovat a vidí pouze veřejně dostupné informace.  
 
-# Administrátor:
+### Administrátor:
 
 * Administrátor po přihlášení může kompletně spravovat celou aplikaci. Bylo by vhodné, aby měl
 za tím účelem vlastní rozhraní.  
 
-# Další požadavky:
+### Další požadavky:
 
 * a) Kromě popsaných funkčností by bylo vhodné, aby kromě přidávání, mazání a prohlížení bylo
 možné jednotlivé záznamy také řadit, filtrovat, vyhledávat a počítat jejich souhrny.  
